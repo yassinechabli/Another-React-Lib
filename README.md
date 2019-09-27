@@ -19,6 +19,10 @@ Just another React Library filled with awesome reusable components
 Navigate into your React project and run the following command
 `npm i another-react-lib`
 
+## Contributing 
+
+If you want to contrbiute to this project please take a look at the [guidelines](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md)
+
 
 
 
