@@ -40,7 +40,18 @@ export default App;
 
 ## Contributing 
 
-If you want to contrbiute to this project please take a look at the [guidelines](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md)
+If you want to contrbiute to this project please take a look at the [guidelines/how-to](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md)
+
+## About 
+
+As the name of the library suggests, it's simply another React library.  
+So then what's the motivation, you may ask. Well, when I saw Hacktoberfest 2019 was around the corner, 
+I was looking at what I could contribute to this year. For me I find it daunting to find a repository where I can contribute  
+at my own level. The projects I had encountered were either too basic or way too advanced. 
+
+I wanted to create a repository that people from beginner to advanced could contribute in a meaningful way. (Myself included obviously)
+
+Oh and I was able to get this project up and running by using `nwb`, which is an npm package for creating npm packages. So if you want to make your own React library and open source it, I advise checking them out.
 
 
 
