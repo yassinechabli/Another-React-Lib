@@ -16,8 +16,27 @@ Just another React Library filled with awesome reusable components
 [coveralls]: https://coveralls.io/github/user/repo
 
 ## Install ##
-Navigate into your React project and run the following command
+Navigate into your React project and run the following command:  
 `npm i another-react-lib`
+
+## Usage 
+This is a very basic example to get you started 
+
+```
+import React from 'react';
+import {SimpleRedButton} from "another-react-lib" 
+
+function App() {
+  return (
+    <div className="App">
+      <SimpleRedButton text={'so very simple and red'}/>
+    </div>
+  );
+}
+
+export default App;
+```
+
 
 ## Contributing 
 
