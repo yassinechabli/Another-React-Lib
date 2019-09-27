@@ -10,6 +10,14 @@
 
 - `npm start` will run a development server with the component's demo app at [http://localhost:3000](http://localhost:3000) with hot module reloading.
 
+## How to contribute 
+
+Take a look at this [step by step process](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
+
+## Quality Guidelines for contributing 
+
+Making an example of how to use the component and which props the component will use would be awesome. 
+
 ## Running Tests
 
 - `npm test` will run the tests once.
@@ -18,8 +26,3 @@
 
 - `npm run test:watch` will run the tests on every change.
 
-## Building
-
-- `npm run build` will build the component for publishing to npm and also bundle the demo app.
-
-- `npm run clean` will delete built resources.
