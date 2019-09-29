@@ -57,6 +57,8 @@ I wanted to create a repository that people from beginner to advanced could cont
 
 Oh and I was able to get this project up and running by using `nwb`, which is an npm package for creating npm packages. So if you want to make your own React library and open source it, I advise checking them out.
 
+## Hacktoberfest 2019
 
+If you want to contrbiute for Hacktoberfest 2019, be sure to check out how to contribute. If you want to be eligible for your free Hacktoberfest shirt and stickers then be sure to register. https://hacktoberfest.digitalocean.com/ 
 
-
+Feel free to make all four of your pull requests here or feel free to spread them out across other respositories. 
