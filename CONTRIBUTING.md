@@ -11,7 +11,7 @@
 - `npm start` will run a development server with the component's demo app at [http://localhost:3000](http://localhost:3000) with hot module reloading.
 
 ## How to contribute 
-
+Check out the issues section, feel free to make your own or claim one to work on.  
 Take a look at this [step by step process](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github)
 
 ## Quality Guidelines for contributing 
