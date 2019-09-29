@@ -1,0 +1,11 @@
+.green {background-color: #4CAF50;} /* Green */
+.blue {background-color: #008CBA;} /* Blue */
+.red {background-color: #f44336;} /* Red */ 
+.gray {background-color: #e7e7e7; color: black;} /* Gray */ 
+.black {background-color: #555555;} /* Black */
+
+.small {font-size: 16px} 
+.medium {font-size: 22px}
+.large {font-size: 30px}
+
+.button {border-radius: 5px; padding:10px}
