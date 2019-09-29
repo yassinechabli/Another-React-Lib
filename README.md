@@ -42,6 +42,10 @@ export default App;
 
 If you want to contrbiute to this project please take a look at the [guidelines/how-to](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md)
 
+## Documentation
+
+https://github.com/NehemiahK/Another-React-Lib/tree/master/docs
+
 ## About 
 
 As the name of the library suggests, it's simply another React library.  
