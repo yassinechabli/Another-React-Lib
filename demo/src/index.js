@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
+import './index.css'
 
 import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
-
+import Header from '../../src/Header/Header'
 import Button from '../../src/Button/Button';
 import Form from "../../src/Form/Form";
 
@@ -33,6 +34,7 @@ class Demo extends Component {
     };
     return(
       <div>
+        <Header/>
         <h2>Collapse Component</h2>
 
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
