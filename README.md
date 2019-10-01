@@ -1,5 +1,5 @@
 <img src ="docs/images/aReactLib.png" alt="logo" />
-# Another-React-Lib
+## Another-React-Lib
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
