@@ -1,0 +1,49 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.dark {
+  background-color: #333;
+}
+
+ul.light {
+  background-color: #e8e8e8;
+}
+
+ul.dark li a,
+ul.dark li {
+  color: white;
+}
+
+ul.light li a,
+ul.light li {
+  color: black;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.dark .active {
+  background-color: #008cba;
+}
+.light .active {
+  background-color: #c1c1c1;
+}
+
+.brand {
+  padding: 14px 16px;
+}
