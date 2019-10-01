@@ -21,7 +21,7 @@ export default App;
 ###  Radio Group Properties 
 
 Property | Type | Required | Description
-:--- | :--- | :--- | :--- | :---
+:--- | :--- | :--- | :--- 
 `name`|string|yes|What you'd normally put on the radio inputs themselves. 
 `selectedValue`|string, number or boolean|yes|The currently selected value. This will be used to compare against the values on the Radio components to select the right one.
 `onChange`|Function|yes| Will be used to handle the newly selected value.
