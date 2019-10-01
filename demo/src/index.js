@@ -5,6 +5,7 @@ import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
 
 import Button from '../../src/Button/Button';
 import FlatButton from '../../src/FlatButton/FlatButton';
+import Collapse from '../../src/Collapse/Collapse';
 
 class Demo extends Component {
 
@@ -12,6 +13,10 @@ class Demo extends Component {
   render() {
     return(
       <div>
+        <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
+        <br />
+        <br />
+        <br />
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
         <br />
         <br />
