@@ -34,9 +34,4 @@ const Tabs = ({
   );
 };
 
-// Tabs.propTypes = {
-//   onChange: PropTypes.func.isRequired,
-//   onSubmit: PropTypes.func.isRequired,
-//   value: PropTypes.string.isRequired
-// };
 export default Tabs;
