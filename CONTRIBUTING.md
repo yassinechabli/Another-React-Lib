@@ -14,6 +14,8 @@
 
 ## How to contribute
 
+Step 0 I to check the issues section, if you want to work on something that doesn't have an issue for it yet, please make one so everyone knows you're working on it. If you see an issue that interests you, just comment that you want to take that issue and it will be assigned to you.
+
 In order to contribute to this project, you can follow below steps :
 
 **Fork the repository**
