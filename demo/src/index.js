@@ -3,6 +3,7 @@ import {render} from 'react-dom'
 
 import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
 import Button from '../../src/Button/Button';
+import Form from "../../src/Form/Form";
 
 class Demo extends Component {
 
@@ -13,6 +14,7 @@ class Demo extends Component {
      text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue'
      handleClick = {() => alert('hello world')}
      />
+     <Form fields={["input", "textarea", "button"]} />
     </div>
   }
 }
