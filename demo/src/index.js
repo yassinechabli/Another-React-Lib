@@ -1,14 +1,19 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
 import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
+
 import Button from '../../src/Button/Button';
 import Form from "../../src/Form/Form";
+
+import FlatButton from '../../src/FlatButton/FlatButton';
+
 
 class Demo extends Component {
 
 
   render() {
+
     return <div>
      <Button 
      text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue'
@@ -16,7 +21,10 @@ class Demo extends Component {
      />
      <Form fields={["input", "textarea", "button"]} />
     </div>
+
+
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector('#demo'))
+
