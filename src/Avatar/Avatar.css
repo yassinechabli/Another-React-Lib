@@ -1,0 +1,10 @@
+.img-avatar {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50em;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
