@@ -19,6 +19,7 @@ class Demo extends Component {
         <SocialIcon name='whatsapp' size='lg' />
         <SocialIcon name='other' size='lg' />
         <Avatar src='https://pickaface.net/gallery/avatar/unr_test_161024_0535_9lih90.png' />
+        <Avatar />
         <Button
           text={'best button ever'}
           size='medium'
