@@ -5,6 +5,16 @@ import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
 
 import Button from '../../src/Button/Button';
 import FlatButton from '../../src/FlatButton/FlatButton';
+import Tabs from '../../src/Tabs/Tabs';
+import Tab from '../../src/Tabs/Tab';
+
+const Tab1 = () => {
+  return <div>Tab1</div>
+}
+
+const Tab2 = () => {
+  return <div>Tab2</div>
+}
 
 class Demo extends Component {
 
@@ -30,6 +40,11 @@ class Demo extends Component {
         <br />
         <br />
         <FlatButton text={'best button ever'} size='small' buttonColor='black' handleClick = {() => alert('Flatted world')} />
+        <br/>
+        <Tabs defaultTab={0}>
+          <Tab component={Tab1} title="Default Tab"/>
+          <Tab component={Tab2} title="Tab 2"/>
+        </Tabs>
       </div>
     );
   }
