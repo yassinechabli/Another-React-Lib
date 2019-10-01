@@ -13,7 +13,6 @@ class Demo extends Component {
 
 
   render() {
-
     return <div>
      <Button 
      text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue'
@@ -21,6 +20,7 @@ class Demo extends Component {
      />
      <Form fields={["input", "textarea", "button"]} />
     </div>
+
 
 
   }
