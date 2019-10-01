@@ -1,0 +1,10 @@
+
+.header{
+    border: solid 1px #f2f2f2;
+}
+.content{
+    border-left: solid 1px #f2f2f2;
+    border-right: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
+    border-radius: 0 0 5px 5px;
+}

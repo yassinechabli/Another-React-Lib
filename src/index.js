@@ -7,7 +7,10 @@ import Form from "./Form/Form";
 import ProgressBar from "./ProgressBar/ProgressBar"
 import FlatButton from './FlatButton/FlatButton';
 import Profile from './Profile/Profile';
+import {Radio, RadioGroup} from './RadioButton/radio'
+import Tabs from './Tabs/Tabs';
+import Tab from './Tabs/Tab'
+import Dropdown from './Dropdown/Dropdown';
 
-export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form, Profile};
-
+export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form, ProfileTabs, Tab, Radio, RadioGroup, Dropdown};
 
