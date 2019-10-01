@@ -7,6 +7,7 @@ import Button from '../../src/Button/Button';
 import Form from "../../src/Form/Form";
 
 import FlatButton from '../../src/FlatButton/FlatButton';
+import { Radio, RadioGroup} from '../../src/RadioButton/radio'
 
 import Collapse from '../../src/Collapse/Collapse';
 
@@ -24,12 +25,16 @@ const Tab2 = () => {
 
 
 class Demo extends Component {
-
+  
 
   render() {
+    const handleChange =  ()=> {
+      console.log("abcd");
+    };
     return(
       <div>
         <h2>Collapse Component</h2>
+
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
         <br />
         <h2>Button Component</h2>
@@ -46,6 +51,12 @@ class Demo extends Component {
           <Tab component={Tab1} title="Default Tab"/>
           <Tab component={Tab2} title="Tab 2"/>
         </Tabs>
+
+<h2>Radio Buttons </h2>
+        <RadioGroup name="xx" selectedValue="Orange" onChange={handleChange}>
+          <Radio value="Orange" /> 
+          <Radio value="Apple" /> 
+        </RadioGroup>
       </div>
     );
 
