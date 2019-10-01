@@ -13,6 +13,7 @@ import Collapse from '../../src/Collapse/Collapse';
 
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
+import ExtendedText from "../../src/ExtendedText/ExtendedText";
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -52,11 +53,13 @@ class Demo extends Component {
           <Tab component={Tab2} title="Tab 2"/>
         </Tabs>
 
-<h2>Radio Buttons </h2>
+        <h2>Radio Buttons </h2>
         <RadioGroup name="xx" selectedValue="Orange" onChange={handleChange}>
           <Radio value="Orange" /> 
           <Radio value="Apple" /> 
         </RadioGroup>
+        <br/>
+        <ExtendedText characterAmount={10} text={'This is sample display text that can be expanded to view in its entirety by clicking read more.'} />
       </div>
     );
 
