@@ -1,0 +1,26 @@
+.green {color: #4CAF50;} /* Green */
+.blue {color: #008CBA;} /* Blue */
+.red {color: #f44336;} /* Red */ 
+.gray {color: #e7e7e7; color: black;} /* Gray */ 
+.black {color: #555555;} /* Black */
+
+.small {font-size: 16px} 
+.medium {font-size: 22px}
+.large {font-size: 30px}
+
+.flat-button {
+    border-radius: 5px; 
+    padding:10px; 
+    box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.4);
+    background: none;
+    border: none;
+    transition: all .4s;
+}
+
+.flat-button:hover{
+    box-shadow: 0px -5px 38px #fff, 0px 0px 30px rgba(0,0,0,.8);
+    -webkit-box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.8);
+    -moz-box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.8);
+}
