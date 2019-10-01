@@ -1,12 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 
-import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
-
-import Button from '../../src/Button/Button';
-import Form from "../../src/Form/Form";
-
-import FlatButton from '../../src/FlatButton/FlatButton';
+import {Button, FlatButton, Form, Profile, SimpleRedButton } from '../../src/index';
 
 
 class Demo extends Component {
@@ -19,6 +14,8 @@ class Demo extends Component {
      handleClick = {() => alert('hello world')}
      />
      <Form fields={["input", "textarea", "button"]} />
+     <Profile name={'Joshua'} image = {{sourceType: 'url', location: 'https://avatars2.githubusercontent.com/u/52901917?s=88&v=4'}}
+         bio={'Full Stack Engineer'} link={{source: 'https://github.com/Joshua-Burleson', text: 'GitHub'}} socials = {[{name: 'facebook', source: 'https://www.facebook.com/zuck'}]}/>
     </div>
 
 

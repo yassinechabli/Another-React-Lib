@@ -6,7 +6,8 @@ import Header from "./Header/Header";
 import Form from "./Form/Form";
 import ProgressBar from "./ProgressBar/ProgressBar"
 import FlatButton from './FlatButton/FlatButton';
+import Profile from './Profile/Profile';
 
-export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form};
+export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form, Profile};
 
 
