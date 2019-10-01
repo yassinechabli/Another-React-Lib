@@ -8,4 +8,8 @@
 .medium {font-size: 22px}
 .large {font-size: 30px}
 
+.sm {font-size: 16px} 
+.md {font-size: 22px}
+.lg {font-size: 30px}
+
 .button {border-radius: 5px; padding:10px}

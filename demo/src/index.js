@@ -4,6 +4,8 @@ import { render } from 'react-dom'
 import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
 
 import Button from '../../src/Button/Button';
+import Form from "../../src/Form/Form";
+
 import FlatButton from '../../src/FlatButton/FlatButton';
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
@@ -15,6 +17,7 @@ const Tab1 = () => {
 const Tab2 = () => {
   return <div>Tab2</div>
 }
+
 
 class Demo extends Component {
 
@@ -47,6 +50,7 @@ class Demo extends Component {
         </Tabs>
       </div>
     );
+
   }
 }
 
