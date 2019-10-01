@@ -1,7 +1,8 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
 import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
+
 import Button from '../../src/Button/Button';
 import FlatButton from '../../src/FlatButton/FlatButton';
 
@@ -34,4 +35,5 @@ class Demo extends Component {
   }
 }
 
-render(<Demo/>, document.querySelector('#demo'))
+render(<Demo />, document.querySelector('#demo'))
+
