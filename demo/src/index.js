@@ -7,6 +7,9 @@ import Button from '../../src/Button/Button';
 import Form from "../../src/Form/Form";
 
 import FlatButton from '../../src/FlatButton/FlatButton';
+
+import Collapse from '../../src/Collapse/Collapse';
+
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
 
@@ -19,12 +22,17 @@ const Tab2 = () => {
 }
 
 
+
 class Demo extends Component {
 
 
   render() {
     return(
       <div>
+        <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
+        <br />
+        <br />
+        <br />
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
         <br />
         <br />
