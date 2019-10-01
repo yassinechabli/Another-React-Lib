@@ -29,29 +29,19 @@ class Demo extends Component {
   render() {
     return(
       <div>
+        <h2>Collapse Component</h2>
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
         <br />
-        <br />
-        <br />
+        <h2>Button Component</h2>
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
         <br />
-        <br />
-        <br />
-        <h1>Flat Buttons</h1>
+        <h2>Flat Buttons</h2>
         <FlatButton text={'best button ever'} size='small' buttonColor='red' handleClick = {() => alert('Flatted world')} />
         <br />
-        <br />
         <FlatButton text={'best button ever'} size='small' buttonColor='green' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='blue' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='grey' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='black' handleClick = {() => alert('Flatted world')} />
         <br/>
+        
+        <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
           <Tab component={Tab1} title="Default Tab"/>
           <Tab component={Tab2} title="Tab 2"/>
