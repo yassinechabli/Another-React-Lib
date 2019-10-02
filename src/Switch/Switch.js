@@ -10,7 +10,7 @@ const Switch = ({ value, checked, onClick }) => {
 
   return (
     <label className="switch">
-      <input type="checkbox" defaultChecked={checked} checked={checked} onChange={handleClick}/>
+      <input type="checkbox" checked={checked} onChange={handleClick}/>
       <span className="slider"/>
       { value && <p>{value}</p> }
     </label>
