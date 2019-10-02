@@ -13,10 +13,16 @@ import Tab from './Tabs/Tab'
 import Dropdown from './Dropdown/Dropdown';
 import TwitterShare from './TwitterShareButton/twitterShare'
 import Switch from './Switch/Switch'
-
-
-
+import Collapse from './Collapse/Collapse'
+import Profile from './Profile/Profile'
+import Searchbar from './SearchBar/Searchbar'
+import ExtendedText from './ExtendedText/ExtendedText'
+import DeleteButton from './DeleteButton/DeleteButton'
 export { 
+  Collapse,
+  DeleteButton,
+  Profile,
+  Searchbar,
   LoadingButton, 
   SimpleRedButton, 
   GhostButton, 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar, Switch } from '../../src/index';
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar, Switch, DeleteButton } from '../../src/index';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -50,6 +50,10 @@ class Demo extends Component {
       
         <h2>Button Component</h2>
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
+        <br />
+
+	<h2>Flat Buttons</h2>
+        <DeleteButton text={'best button ever'} size='small' buttonColor='red' handleClick = {() => alert('Delete Item?')} />
         <br />
       
         <h2>Flat Buttons</h2>
