@@ -1,0 +1,10 @@
+.text-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.text-button {
+    color: #008CBA;
+    cursor: pointer;
+}
