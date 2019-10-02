@@ -52,7 +52,7 @@ class Demo extends Component {
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
         <br />
 
-	<h2>Flat Buttons</h2>
+      	<h2>Delete Button</h2>
         <DeleteButton text={'best button ever'} size='small' buttonColor='red' handleClick = {() => alert('Delete Item?')} />
         <br />
       
