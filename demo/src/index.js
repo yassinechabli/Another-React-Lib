@@ -83,7 +83,7 @@ class Demo extends Component {
 
 
         <br />
-        {/* <ExtendedText characterAmount={10} text={'This is sample display text that can be expanded to view in its entirety by clicking read more.'} /> */}
+        <ExtendedText characterAmount={10} text={'This is sample display text that can be expanded to view in its entirety by clicking read more.'} />
 
 
         <h2>Share on Twitter</h2>

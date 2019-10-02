@@ -4,6 +4,7 @@ import GhostButton from "./GhostButton/GhostButton";
 import Collapse from "./Collapse/Collapse"
 import Profile from "./Profile/Profile"
 import Searchbar from "./SearchBar/Searchbar"
+import ExtendedText from "./ExtendedText/ExtendedText"
 import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
