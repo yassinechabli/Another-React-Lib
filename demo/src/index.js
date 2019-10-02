@@ -8,7 +8,7 @@ import Form from "../../src/Form/Form";
 
 import FlatButton from '../../src/FlatButton/FlatButton';
 import { Radio, RadioGroup} from '../../src/RadioButton/radio'
-
+import TwitterShare from '../../src/TwitterShareButton/twitterShare'
 import Collapse from '../../src/Collapse/Collapse';
 
 import Tabs from '../../src/Tabs/Tabs';
@@ -57,6 +57,9 @@ class Demo extends Component {
           <Radio value="Orange" /> 
           <Radio value="Apple" /> 
         </RadioGroup>
+
+    <h2>Share on Twitter</h2>   
+      <TwitterShare message="Hi" size="md"/>
       </div>
     );
 
