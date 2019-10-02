@@ -1,12 +1,6 @@
-import React from 'react'
-
-import PropTypes from 'prop-types'
-
+import React from "react";
+import PropTypes from "prop-types";
 import './Header.css'
-
-const propTypes = {
-  brandName: PropTypes.string.isRequired
-}
 
 const Header = ({ brandName = 'My App', theme = 'dark' }) => {
   function toggleSandwich() {
@@ -37,6 +31,10 @@ const Header = ({ brandName = 'My App', theme = 'dark' }) => {
   )
 }
 
-Header.propTypes = propTypes
+
+Header.propTypes = {
+  brandName: PropTypes.string.isRequired,
+  theme: PropTypes.string
+};
 
 export default Header
