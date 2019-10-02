@@ -18,6 +18,7 @@ import {
   Switch
 } from "../../src/index";
 
+
 const Tab1 = () => {
   return <div>Tab1</div>;
 };
@@ -77,6 +78,7 @@ class Demo extends Component {
           buttonColor="red"
           handleClick={() => alert("Flatted world")}
         />
+
         <br />
         <FlatButton
           text={"best button ever"}
@@ -104,6 +106,7 @@ class Demo extends Component {
           ]}
         />
 
+
         <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
           <Tab component={Tab1} title="Default Tab" />
@@ -125,6 +128,7 @@ class Demo extends Component {
             "This is sample display text that can be expanded to view in its entirety by clicking read more."
           }
         />
+
 
         <h2>Share on Twitter</h2>
         <TwitterShare message="Hi" size="md" />
