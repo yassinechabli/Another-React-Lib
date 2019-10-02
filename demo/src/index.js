@@ -78,6 +78,7 @@ class Demo extends Component {
           buttonColor="red"
           handleClick={() => alert("Flatted world")}
         />
+
         <br />
         <FlatButton
           text={"best button ever"}
@@ -124,6 +125,14 @@ class Demo extends Component {
         </RadioGroup>
 
         <Searchbar></Searchbar>
+
+        <br />
+        <ExtendedText
+          characterAmount={10}
+          text={
+            "This is sample display text that can be expanded to view in its entirety by clicking read more."
+          }
+        />
 
         <br />
         <ExtendedText

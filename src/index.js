@@ -5,7 +5,6 @@ import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
 import Collapse from "./Collapse/Collapse";
-
 import Profile from "./Profile/Profile";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import FlatButton from "./FlatButton/FlatButton";
@@ -17,7 +16,7 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
-import Searchbar from "./ExtendedText/ExtendedText";
+import SearchBar from "./SearchBar/Searchbar";
 
 export {
   LoadingButton,
@@ -39,5 +38,5 @@ export {
   Profile,
   Collapse,
   ExtendedText,
-  Searchbar
+  SearchBar
 };
