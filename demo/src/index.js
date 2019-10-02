@@ -13,6 +13,7 @@ import Collapse from '../../src/Collapse/Collapse';
 
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
+import Searchbar from '../../src/SearchBar/Searchbar';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -57,6 +58,8 @@ class Demo extends Component {
           <Radio value="Orange" /> 
           <Radio value="Apple" /> 
         </RadioGroup>
+
+        <Searchbar></Searchbar>
       </div>
     );
 
