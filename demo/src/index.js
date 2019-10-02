@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header } from '../../src/index';
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText } from '../../src/index';
 
 
 const Tab1 = () => {
@@ -54,12 +54,18 @@ class Demo extends Component {
           <Radio value="Apple" /> 
         </RadioGroup>
 
+        <br/>
+        <ExtendedText characterAmount={10} text={'This is sample display text that can be expanded to view in its entirety by clicking read more.'} />
+
+
     <h2>Share on Twitter</h2>   
       <TwitterShare message="Hi" size="md"/>
-      </div>
+
+   
 
       <h2>Form Component</h2>
       <Form fields={["input", "textarea", "button"]} />
+          </div>
     );
 
   }
