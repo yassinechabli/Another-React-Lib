@@ -134,6 +134,8 @@ class Demo extends Component {
 
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
+        <h2>Extra Options (on hover)</h2>
+        <ExtraOptions />
       </div>
     );
   }
