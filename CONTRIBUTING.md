@@ -84,7 +84,7 @@ Put a significant title, a comment and then press the "Create pull request" butt
 
 That's it, you've made a pull request.
 
-## Quality Guidelines for contributing
+## General Guidelines for Contributing
 
 * *Please*, do not touch the index files.
 * Contributing documentation would be very welcome (and is easy to do).
