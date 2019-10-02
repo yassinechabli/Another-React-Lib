@@ -11,7 +11,8 @@ import {Radio, RadioGroup} from './RadioButton/radio'
 import Tabs from './Tabs/Tabs';
 import Tab from './Tabs/Tab'
 import Dropdown from './Dropdown/Dropdown';
-import Swith from './Switch/Switch'
+import TwitterShare from './TwitterShareButton/twitterShare'
+import Switch from './Switch/Switch'
 
 
 
@@ -30,7 +31,9 @@ export {
   RadioGroup, 
   Dropdown, 
   Switch,
-  ExtendedText
+  ExtendedText,
+  TwitterShare
 };
+
 
 
