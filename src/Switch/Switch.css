@@ -1,0 +1,40 @@
+.switch {
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+  user-select: none;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch span.slider {
+  position: relative;
+  width: 40px;
+  height: 15px;
+
+  border-radius: 10px;
+  margin: 0 10px;
+  background: #000;
+}
+
+.switch span.slider::before {
+  position: absolute;
+  content: '';
+  background: #e0e0e0;
+  
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%);
+  transition: 0.2s ease-out;
+}
+
+.switch input:checked + span.slider::before {
+  left: 100%;
+  transform: translate(calc(-100% + 1px), -50%);
+}
