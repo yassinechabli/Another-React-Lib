@@ -10,10 +10,10 @@ import {Radio, RadioGroup} from './RadioButton/radio'
 import Tabs from './Tabs/Tabs';
 import Tab from './Tabs/Tab'
 import Dropdown from './Dropdown/Dropdown';
+import TwitterShare from './TwitterShareButton/twitterShare'
 
 
-
-export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form, Tabs, Tab, Radio, RadioGroup,Dropdown};
+export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form, Tabs, Tab, Radio, RadioGroup,Dropdown, TwitterShare};
 
 
 
