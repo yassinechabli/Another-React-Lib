@@ -31,9 +31,6 @@ class Demo extends Component {
 
     return (
       <div>
-
-
-
         <Header />
         <h2>Collapse Component</h2>
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'} />
@@ -78,9 +75,7 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
 
-
         <Searchbar></Searchbar>
-
 
         <br />
         <ExtendedText characterAmount={10} text={'This is sample display text that can be expanded to view in its entirety by clicking read more.'} />
@@ -98,4 +93,3 @@ class Demo extends Component {
 }
 
 render(<Demo />, document.querySelector('#demo'))
-
