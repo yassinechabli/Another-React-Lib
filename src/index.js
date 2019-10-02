@@ -10,19 +10,22 @@ import { Radio, RadioGroup } from "./RadioButton/radio";
 import Tabs from "./Tabs/Tabs";
 import Tab from "./Tabs/Tab";
 import Dropdown from "./Dropdown/Dropdown";
+import ExtendedText from './ExtendedText/ExtendedText';
 
 export {
-  LoadingButton,
-  SimpleRedButton,
-  GhostButton,
-  Button,
-  Header,
-  FlatButton,
-  ProgressBar,
-  Form,
-  Tabs,
-  Tab,
-  Radio,
-  RadioGroup,
-  Dropdown
+    LoadingButton,
+    SimpleRedButton,
+    GhostButton,
+    Button,
+    Header,
+    FlatButton,
+    ProgressBar,
+    Form,
+    Tabs,
+    Tab,
+    Radio,
+    RadioGroup,
+    Dropdown,
+    ExtendedText
 };
+
