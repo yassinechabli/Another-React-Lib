@@ -13,9 +13,10 @@ import Tab from "./Tabs/Tab";
 import Dropdown from "./Dropdown/Dropdown";
 import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
+import Collapse from "./Collapse/Collapse";
+import Profile from "./Profile/Profile";
+import SearchBar from "./SearchBar/Searchbar";
 import ExtendedText from "./ExtendedText/ExtendedText";
-
-
 
 export {
   LoadingButton,
@@ -33,5 +34,8 @@ export {
   Dropdown,
   Switch,
   ExtendedText,
-  TwitterShare
+  TwitterShare,
+  Collapse,
+  Profile,
+  SearchBar
 };

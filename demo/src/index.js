@@ -1,20 +1,36 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import "./index.css";
-import { Button, FlatButton, Form, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Switch} from "../../src/index";
+import {
+  Button,
+  Collapse,
+  FlatButton,
+  Form,
+  Profile,
+  Tabs,
+  Tab,
+  Radio,
+  RadioGroup,
+  TwitterShare,
+  Header,
+  ExtendedText,
+  SearchBar,
+  Switch
+} from "../../src/index";
+
 
 const Tab1 = () => {
-  return <div>Tab1</div>
-}
+  return <div>Tab1</div>;
+};
 
 const Tab2 = () => {
-  return <div>Tab2</div>
-}
+  return <div>Tab2</div>;
+};
 
 class Demo extends Component {
   state = {
-    checked: false,
-  }
+    checked: false
+  };
 
   handleChecked = () => {
     this.setState({ ...this.state, checked: !this.state.checked });
@@ -28,6 +44,9 @@ class Demo extends Component {
     return (
       <div>
         <Header />
+        <h2>Collapse Component</h2>
+        <Collapse collapseHeader={"Click me"} collapseBody={"Sup, dude!"} />
+        <br />
 
         <Switch
           value="Switch 1"
@@ -59,6 +78,7 @@ class Demo extends Component {
           buttonColor="red"
           handleClick={() => alert("Flatted world")}
         />
+
         <br />
         <FlatButton
           text={"best button ever"}
@@ -67,6 +87,25 @@ class Demo extends Component {
           handleClick={() => alert("Flatted world")}
         />
         <br />
+
+        <h2>Profile Component</h2>
+        <Profile
+          name={"Joshua"}
+          image={{
+            sourceType: "url",
+            location:
+              "https://avatars2.githubusercontent.com/u/52901917?s=88&v=4"
+          }}
+          bio={"Full Stack Engineer"}
+          link={{
+            source: "https://github.com/Joshua-Burleson",
+            text: "GitHub"
+          }}
+          socials={[
+            { name: "facebook", source: "https://www.facebook.com/zuck" }
+          ]}
+        />
+
 
         <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
@@ -80,6 +119,8 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
 
+        <SearchBar></SearchBar>
+
         <br />
         <ExtendedText
           characterAmount={10}
@@ -87,6 +128,7 @@ class Demo extends Component {
             "This is sample display text that can be expanded to view in its entirety by clicking read more."
           }
         />
+
 
         <h2>Share on Twitter</h2>
         <TwitterShare message="Hi" size="md" />
