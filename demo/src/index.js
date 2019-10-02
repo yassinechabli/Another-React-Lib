@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup } from '../../src/index';
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare } from '../../src/index';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -51,6 +50,9 @@ class Demo extends Component {
           <Radio value="Orange" /> 
           <Radio value="Apple" /> 
         </RadioGroup>
+
+    <h2>Share on Twitter</h2>   
+      <TwitterShare message="Hi" size="md"/>
       </div>
 
       <h2>Form Component</h2>
