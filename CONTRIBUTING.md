@@ -84,7 +84,7 @@ Put a significant title, a comment and then press the "Create pull request" butt
 
 That's it, you've made a pull request.
 
-## General Guidelines for Contributing
+## Quality Guidelines for contributing
 
 * *Please*, do not touch the index files.
 * Contributing documentation would be very welcome (and is easy to do).
@@ -93,8 +93,8 @@ That's it, you've made a pull request.
 
 ## Running Tests
 
-* `npm test` will run the tests once.
+- `npm test` will run the tests once.
 
-* `npm run test:coverage` will run the tests and produce a coverage report in `coverage/`.
+- `npm run test:coverage` will run the tests and produce a coverage report in `coverage/`.
 
-* `npm run test:watch` will run the tests on every change.
+- `npm run test:watch` will run the tests on every change.
