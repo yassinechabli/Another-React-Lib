@@ -12,7 +12,7 @@ const Searchbar = ({
   return (
     <div className="form-container searchbar">
       <form onSubmit={onSubmit}>
-        <input value={value} onChange={onChange} {...rest} />
+        <input type="text" value={value} onChange={onChange} {...rest} />
         <button type="submit">Search</button>
       </form>
     </div>
