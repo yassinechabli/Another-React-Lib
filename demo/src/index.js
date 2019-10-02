@@ -115,7 +115,6 @@ class Demo extends Component {
         </RadioGroup>
 
         <SearchBar></SearchBar>
-
         <br />
         <ExtendedText
           characterAmount={10}
