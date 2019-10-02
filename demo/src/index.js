@@ -7,6 +7,10 @@ import Button from '../../src/Button/Button';
 import Form from "../../src/Form/Form";
 
 import FlatButton from '../../src/FlatButton/FlatButton';
+import { Radio, RadioGroup} from '../../src/RadioButton/radio'
+
+import Collapse from '../../src/Collapse/Collapse';
+
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
 
@@ -20,7 +24,6 @@ const Tab2 = () => {
   return <div>Tab2</div>
 }
 
-
 class Demo extends Component {
   state = {
     checked: false,
@@ -29,8 +32,12 @@ class Demo extends Component {
   handleChecked = () => {
     this.setState({ ...this.state, checked: !this.state.checked })
   }
- 
+
   render() {
+    const handleChange = () => {
+      console.log("abcd");
+    };
+    
     return(
       <div>
         <Switch 
@@ -45,34 +52,32 @@ class Demo extends Component {
           checked={this.state.checked} 
           onClick={this.handleChecked}
         />
+        <h2>Collapse Component</h2>
+
+        <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
         <br />
-        <br />
+        <h2>Button Component</h2>
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
         <br />
-        <br />
-        <br />
-        <h1>Flat Buttons</h1>
+        <h2>Flat Buttons</h2>
         <FlatButton text={'best button ever'} size='small' buttonColor='red' handleClick = {() => alert('Flatted world')} />
         <br />
-        <br />
         <FlatButton text={'best button ever'} size='small' buttonColor='green' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='blue' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='grey' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='black' handleClick = {() => alert('Flatted world')} />
         <br/>
+        
+        <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
           <Tab component={Tab1} title="Default Tab"/>
           <Tab component={Tab2} title="Tab 2"/>
         </Tabs>
+
+        <h2>Radio Buttons </h2>
+        <RadioGroup name="xx" selectedValue="Orange" onChange={handleChange}>
+          <Radio value="Orange" /> 
+          <Radio value="Apple" /> 
+        </RadioGroup>
       </div>
     );
-
   }
 }
 
