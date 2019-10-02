@@ -13,7 +13,7 @@ import Tab from './Tabs/Tab'
 import Dropdown from './Dropdown/Dropdown';
 import TwitterShare from './TwitterShareButton/twitterShare'
 import Switch from './Switch/Switch'
-
+import StickyButton from './StickyButton/StickyButton'
 
 
 export { 
@@ -32,7 +32,8 @@ export {
   Dropdown, 
   Switch,
   ExtendedText,
-  TwitterShare
+  TwitterShare,
+  StickyButton
 };
 
 

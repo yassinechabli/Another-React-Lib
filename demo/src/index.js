@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar, Switch } from '../../src/index';
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar, Switch, StickyButton } from '../../src/index';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -87,7 +87,11 @@ class Demo extends Component {
         
       <h2>Form Component</h2>
       <Form fields={["input", "textarea", "button"]} />
-          </div>
+      
+        <h2>Sticky Button</h2>
+        <StickyButton text={'Go Top'} buttonColor='blue' size='sm' behavior='smooth' />
+      
+      </div>
 
     );
   }
