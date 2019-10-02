@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar } from '../../src/index';
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar, Switch } from '../../src/index';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -11,21 +11,42 @@ const Tab2 = () => {
   return <div>Tab2</div>
 }
 
-
-
 class Demo extends Component {
-  
+  state = {
+    checked: false,
+  }
+
+  handleChecked = () => {
+    this.setState({ ...this.state, checked: !this.state.checked })
+  }
 
   render() {
-    const handleChange =  ()=> {
+    const handleChange = () => {
       console.log("abcd");
     };
+    
     return(
       <div>
+
+     
+
         <Header/>
         <h2>Collapse Component</h2>
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
         <br />
+      
+         <Switch 
+          value="Switch 1" 
+          checked={!this.state.checked} 
+          onClick={this.handleChecked}
+        />
+        <br />
+        <br />
+        <Switch 
+          value="Switch 2" 
+          checked={this.state.checked} 
+          onClick={this.handleChecked}
+        />
       
         <h2>Button Component</h2>
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
@@ -69,7 +90,6 @@ class Demo extends Component {
           </div>
 
     );
-
   }
 }
 
