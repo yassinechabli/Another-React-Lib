@@ -21,3 +21,7 @@
   padding: 10px;
   cursor: pointer;
 }
+
+.option:hover {
+  color: #d3d3d3;
+}
