@@ -15,7 +15,8 @@ import {
   Header,
   ExtendedText,
   SearchBar,
-  Switch
+  Switch,
+  Spinner
 } from "../../src/index";
 
 
@@ -135,6 +136,13 @@ class Demo extends Component {
 
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
+
+        <h2>Spinner Component</h2>
+        <div style={{ display: 'flex' }}>
+          <Spinner />
+          <Spinner size={20} color="rgb(237, 100, 157)" speed={4} thick={5} background="#fff267" />
+          <Spinner size={50} color="rgb(237, 132, 100)" speed={1} thick={10} background="#22f267" />
+        </div>
       </div>
     );
   }
