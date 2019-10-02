@@ -10,6 +10,8 @@ import FlatButton from '../../src/FlatButton/FlatButton';
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
 
+import Switch from '../../src/Switch/Switch'
+
 const Tab1 = () => {
   return <div>Tab1</div>
 }
@@ -20,11 +22,31 @@ const Tab2 = () => {
 
 
 class Demo extends Component {
+  state = {
+    checked: false,
+  }
 
-
+  handleChecked = () => {
+    this.setState({ ...this.state, checked: !this.state.checked })
+  }
+ 
   render() {
     return(
       <div>
+        <Switch 
+          value="Switch 1" 
+          checked={!this.state.checked} 
+          onClick={this.handleChecked}
+        />
+        <br />
+        <br />
+        <Switch 
+          value="Switch 2" 
+          checked={this.state.checked} 
+          onClick={this.handleChecked}
+        />
+        <br />
+        <br />
         <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
         <br />
         <br />

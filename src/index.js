@@ -8,8 +8,21 @@ import ProgressBar from "./ProgressBar/ProgressBar"
 import FlatButton from './FlatButton/FlatButton';
 import Tabs from './Tabs/Tabs';
 import Tab from './Tabs/Tab'
+import Swith from './Switch/Switch'
 
-export { LoadingButton, SimpleRedButton, GhostButton, Button, Header, FlatButton, ProgressBar, Form, Tabs, Tab};
+export { 
+  LoadingButton, 
+  SimpleRedButton, 
+  GhostButton, 
+  Button, 
+  Header, 
+  FlatButton, 
+  ProgressBar, 
+  Form, 
+  Tabs, 
+  Tab,
+  Switch,
+};
 
 
 
