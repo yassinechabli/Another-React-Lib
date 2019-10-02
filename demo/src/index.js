@@ -14,9 +14,15 @@ import {
   TwitterShare,
   Header,
   ExtendedText,
+<<<<<<< HEAD
   SearchBar,
   Switch,
   Datepicker
+=======
+  Searchbar,
+  Switch,
+  Notification
+>>>>>>> add notification component
 } from "../../src/index";
 
 const Tab1 = () => {
@@ -78,6 +84,7 @@ class Demo extends Component {
           buttonColor="red"
           handleClick={() => alert("Flatted world")}
         />
+<<<<<<< HEAD
         <br />
         <FlatButton
           text={"best button ever"}
@@ -86,6 +93,22 @@ class Demo extends Component {
           handleClick={() => alert("Flatted world")}
         />
         <br />
+=======
+        <br />
+        <FlatButton
+          text={"best button ever"}
+          size="small"
+          buttonColor="green"
+          handleClick={() => alert("Flatted world")}
+        />
+        <br />
+
+        <h2>Notification</h2>
+        <Notification number={10} color={"red"} />
+        <br />
+        <Notification number={10} color={"blue"} />
+        <br />
+>>>>>>> add notification component
 
         <h2>Profile Component</h2>
         <Profile
@@ -117,6 +140,7 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
 
+<<<<<<< HEAD
         <SearchBar></SearchBar>
 
         <br />
@@ -135,6 +159,23 @@ class Demo extends Component {
 
         <h2> Datepicker Component </h2>
         <Datepicker></Datepicker>
+=======
+        <Searchbar></Searchbar>
+
+        <br />
+        <ExtendedText
+          characterAmount={10}
+          text={
+            "This is sample display text that can be expanded to view in its entirety by clicking read more."
+          }
+        />
+
+        <h2>Share on Twitter</h2>
+        <TwitterShare message="Hi" size="md" />
+
+        <h2>Form Component</h2>
+        <Form fields={["input", "textarea", "button"]} />
+>>>>>>> add notification component
       </div>
     );
   }
