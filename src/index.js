@@ -3,7 +3,7 @@ import SimpleRedButton from "./SimpleRedButton/SimpleRedButton";
 import GhostButton from "./GhostButton/GhostButton";
 import Collapse from "./Collapse/Collapse"
 import Profile from "./Profile/Profile"
-import Searchbar from "./SearchBar/Searchbar"
+import SearchBar from "./SearchBar/Searchbar"
 import ExtendedText from "./ExtendedText/ExtendedText"
 import Button from "./Button/Button";
 import Header from "./Header/Header";
@@ -19,28 +19,24 @@ import TwitterShare from './TwitterShareButton/twitterShare'
 import Switch from './Switch/Switch'
 
 
-
 export { 
-  LoadingButton, 
-  SimpleRedButton, 
+  LoadingButton,
+  SimpleRedButton,
   GhostButton,
   Collapse,
   Profile,
-  Searchbar, 
+  SearchBar,
   Button,
-  Header, 
-  FlatButton, 
-  ProgressBar, 
-  Form, 
-  Tabs, 
-  Tab, 
-  Radio, 
-  RadioGroup, 
-  Dropdown, 
+  Header,
+  FlatButton,
+  ProgressBar,
+  Form,
+  Tabs,
+  Tab,
+  Radio,
+  RadioGroup,
+  Dropdown,
   Switch,
   ExtendedText,
   TwitterShare
 };
-
-
-
