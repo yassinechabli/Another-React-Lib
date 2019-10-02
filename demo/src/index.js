@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare } from '../../src/index';
+import './index.css'
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header } from '../../src/index';
+
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -21,6 +23,7 @@ class Demo extends Component {
     };
     return(
       <div>
+        <Header/>
         <h2>Collapse Component</h2>
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
         <br />
