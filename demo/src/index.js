@@ -21,7 +21,6 @@ import {
   Searchbar,
   TwitterShare,
   Header,
-  Heading,
   ExtendedText,
   Switch,
   Notification,
@@ -229,15 +228,6 @@ class Demo extends Component {
 
         <h2>Datepicker Component</h2>
         <Datepicker></Datepicker>
-
-        <Heading type="title">Title</Heading>
-        <Heading type="subtitle">SubTitle</Heading>
-        <Heading type="h1">Heading Component 1</Heading>
-        <Heading type="h2">Heading Component 2</Heading>
-        <Heading type="h3">Heading Component 3</Heading>
-        <Heading type="h4">Heading Component 4</Heading>
-        <Heading type="h5">Heading Component 5</Heading>
-        <Heading type="h6">Heading Component 6</Heading>
       </div>
     );
   }
