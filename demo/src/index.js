@@ -1,27 +1,27 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import "./index.css";
-import { 
-  Avatar, 
-  Button, 
-  Collapse, 
-  Dropdown, 
-  FlatButton, 
-  Form, 
-  GhostButton, 
-  LoadingButton, 
-  ProgressBar, 
-  Profile, 
-  Tabs, 
-  Tab, 
-  Radio, 
-  RadioGroup, 
-  SimpleRedButton, 
-  SocialIcon, 
-  Searchbar, 
-  TwitterShare, 
-  Header, 
-  ExtendedText, 
+import {
+  Avatar,
+  Button,
+  Collapse,
+  Dropdown,
+  FlatButton,
+  Form,
+  GhostButton,
+  LoadingButton,
+  ProgressBar,
+  Profile,
+  Tabs,
+  Tab,
+  Radio,
+  RadioGroup,
+  SimpleRedButton,
+  SocialIcon,
+  Searchbar,
+  TwitterShare,
+  Header,
+  ExtendedText,
   Switch,
   Notification,
   StickyButton,
@@ -240,7 +240,6 @@ class Demo extends Component {
 
         <h2>Datepicker Component</h2>
         <Datepicker></Datepicker>
-
       </div>
     );
   }

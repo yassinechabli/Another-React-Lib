@@ -22,7 +22,9 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "prop-types": "latest"
+  },
   "peerDependencies": {
     "react": "16.x"
   },

@@ -3,6 +3,7 @@ import SimpleRedButton from "./SimpleRedButton/SimpleRedButton";
 import GhostButton from "./GhostButton/GhostButton";
 import Button from "./Button/Button";
 import Header from "./Header/Header";
+import Heading from "./Heading/Heading";
 import Form from "./Form/Form";
 import Avatar from "./Avatar/Avatar";
 import Collapse from "./Collapse/Collapse";
@@ -31,6 +32,7 @@ export {
   GhostButton,
   Button,
   Header,
+  Heading,
   FlatButton,
   ProgressBar,
   Form,
