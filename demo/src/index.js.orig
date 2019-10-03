@@ -26,8 +26,7 @@ import {
   Switch,
   Notification,
   StickyButton,
-  Datepicker,
-  Spinner
+  Datepicker
 } from "../../src/index";
 
 const Tab1 = () => {
@@ -57,7 +56,7 @@ class Demo extends Component {
   };
   render() {
     const items = ['One', 'Two', 'Three']
-    const handleChange1 = () => {
+    const handleChange1 =  ()=> {
       console.log("abcd");
     };
 
@@ -99,7 +98,7 @@ class Demo extends Component {
         <h2>Dropdown Component</h2>
         <Dropdown menuItems={items} onItemClick={this.handleItemClick} />
         <br />
-
+          
         <h2>Extended Text Component</h2>
         <ExtendedText
           characterAmount={10}
@@ -108,7 +107,7 @@ class Demo extends Component {
           }
         />
         <br />
-
+            
         <h2>Flat Buttons</h2>
         <FlatButton
           text={"best button ever"}
@@ -118,33 +117,33 @@ class Demo extends Component {
         />
 
         <br />
-        <FlatButton
-          text={'best button ever'}
-          size='small'
-          buttonColor='green'
-          handleClick={() => alert('Flatted world')} />
+        <FlatButton 
+          text={'best button ever'} 
+          size='small' 
+          buttonColor='green' 
+          handleClick = {() => alert('Flatted world')} />
         <br />
-
+        
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
         <br />
 
         <h2>Ghost Button</h2>
-        <GhostButton buttonColor='red' text={"Spooky Button"} size='small' handleClick={() => alert('Boo!')} />
+        <GhostButton buttonColor='red' text={"Spooky Button"} size='small' handleClick = {() => alert('Boo!')} />
         <br />
-        <GhostButton buttonColor='green' text={"Spooky Button"} size='small' handleClick={() => alert('Boo!')} />
+        <GhostButton buttonColor='green' text={"Spooky Button"} size='small' handleClick = {() => alert('Boo!')} />
         <br />
 
         <h2>Header Component</h2>
         <Header brandName={"My Awesome Site"} />
         <br />
-
+        
         <h2>Loading Button Component</h2>
-        Loading =
-        <LoadingButton loading={true} />
+        Loading = 
+        <LoadingButton loading={true}/>
         <br />
         Not Loading =
-        <LoadingButton />
+        <LoadingButton/>
         <br />
 
         <h2>Notification</h2>
@@ -191,7 +190,7 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
         <br />
-
+        
         <h2>Search Bar Component</h2>
         <Searchbar
           value={this.state.value}
@@ -199,27 +198,27 @@ class Demo extends Component {
           onSubmit={this.handleSubmit}
         />
         <br />
-
+        
         <h2>Simple Red Button</h2>
-        <SimpleRedButton text={"Shinny Red Button"} />
+        <SimpleRedButton text={"Shinny Red Button"}/>
         <br />
 
 
-
-        <h2>Share on Twitter</h2>
-        <TwitterShare message="Hi" size="md" />
-
-        <h2>Form Component</h2>
-        <Form fields={["input", "textarea", "button"]} />
-
+            
+    <h2>Share on Twitter</h2>   
+      <TwitterShare message="Hi" size="md"/>
+        
+      <h2>Form Component</h2>
+      <Form fields={["input", "textarea", "button"]} />
+      
         <h2>Sticky Button</h2>
         <StickyButton text={'Go Top'} buttonColor='blue' size='sm' behavior='smooth' />
-
+      
         <h2>Social Icon Component</h2>
         <SocialIcon name={"twitter"} />
         <SocialIcon name={"facebook"} />
         <br />
-
+          
         <h2>Switch Component</h2>
         <Switch
           value="Switch 1"
@@ -234,7 +233,7 @@ class Demo extends Component {
           onClick={this.handleChecked}
         />
         <br />
-
+            
         <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
           <Tab component={Tab1} title="Default Tab" />
@@ -249,15 +248,13 @@ class Demo extends Component {
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
 
-        <h2>Spinner Component</h2>
-        <div style={{ display: 'flex' }}>
-          <Spinner />
-          <Spinner size={20} color="rgb(237, 100, 157)" speed={4} thick={5} background="#fff267" />
-          <Spinner size={50} color="rgb(237, 132, 100)" speed={1} thick={10} background="#22f267" />
-        </div>
+<<<<<<< HEAD
+        <Checkbox options={options} onClick={handleChange} title="'Animals'"></Checkbox>
+=======
         <Checkbox options={options} onClick={handleChange} title="Animals"></Checkbox>
         <h2>Datepicker Component</h2>
         <Datepicker></Datepicker>
+>>>>>>> cfac7e570353e750bdd009288b08177ace135942
       </div>
     );
   }
