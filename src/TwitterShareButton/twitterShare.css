@@ -1,0 +1,14 @@
+.icon-lg {
+    width: 100px
+  }
+  
+  .icon-sm {
+    width: 45px;
+  }
+  
+  .icon-md {
+    width: 80px;
+  }
+  img{
+      border-radius: 5px;
+  }

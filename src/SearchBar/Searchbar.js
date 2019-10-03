@@ -1,6 +1,7 @@
 import React from "react";
 
 import PropTypes from "prop-types";
+import "./Searchbar.css"
 
 const Searchbar = ({
   onChange = () => {},
@@ -9,9 +10,9 @@ const Searchbar = ({
   ...rest
 }) => {
   return (
-    <div className="form-container">
+    <div className="form-container searchbar">
       <form onSubmit={onSubmit}>
-        <input value={value} onChange={onChange} {...rest} />
+        <input type="text" value={value} onChange={onChange} {...rest} />
         <button type="submit">Search</button>
       </form>
     </div>

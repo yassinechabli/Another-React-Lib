@@ -84,14 +84,17 @@ Put a significant title, a comment and then press the "Create pull request" butt
 
 That's it, you've made a pull request.
 
-## Quality Guidelines for contributing
+## General Guidelines for Contributing
 
-Making an example of how to use the component and which props the component will use would be awesome.
+* *Please*, do not touch the index files.
+* Contributing documentation would be very welcome (and is easy to do).
+* When making a pull request, please link to the issue being resolved. This makes my life much easier.
+* Making an example of how to use the component and which props the component will use would be awesome.
 
 ## Running Tests
 
-- `npm test` will run the tests once.
+* `npm test` will run the tests once.
 
-- `npm run test:coverage` will run the tests and produce a coverage report in `coverage/`.
+* `npm run test:coverage` will run the tests and produce a coverage report in `coverage/`.
 
-- `npm run test:watch` will run the tests on every change.
+* `npm run test:watch` will run the tests on every change.
