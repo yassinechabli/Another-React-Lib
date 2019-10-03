@@ -16,17 +16,12 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
-import Searchbar from "./SearchBar/Searchbar";
+import SearchBar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
-
-
 
 export {
   LoadingButton,
   SimpleRedButton,
-  Collapse,
-  Profile,
-  Searchbar,
   GhostButton,
   Button,
   Header,
@@ -41,6 +36,9 @@ export {
   Switch,
   TwitterShare,
   Notification,
+  Profile,
+  Collapse,
   ExtendedText,
+  SearchBar,
   Datepicker
 };
