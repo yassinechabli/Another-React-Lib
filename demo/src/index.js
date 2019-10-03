@@ -23,7 +23,8 @@ import {
   Header, 
   ExtendedText, 
   Switch,
-  Notification
+  Notification,
+  Datepicker
 } from "../../src/index";
 
 const Tab1 = () => {
@@ -220,6 +221,14 @@ class Demo extends Component {
 
         <h2>Twitter Share Component</h2>
         <TwitterShare message="Hi" size="md" />
+
+
+        <h2>Form Component</h2>
+        <Form fields={["input", "textarea", "button"]} />
+
+        <h2>Datepicker Component</h2>
+        <Datepicker></Datepicker>
+
       </div>
     );
   }
