@@ -151,7 +151,7 @@ class Demo extends Component {
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
 
-        <Checkbox options={options} onClick={handleChange} title="Animals"></Checkbox>
+        <Checkbox options={options} onClick={handleChange} title="'Animals'"></Checkbox>
       </div>
     );
   }
