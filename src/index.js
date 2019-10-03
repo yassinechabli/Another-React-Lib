@@ -20,10 +20,10 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
+import Checkbox from "./Checkbox/Checkbox";
 import StickyButton from './StickyButton/StickyButton'
 import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
-
 
 
 export {
@@ -49,6 +49,8 @@ export {
   SocialIcon,
   Notification,
   Profile,
+  Checkbox,
+  Collapse,
   ExtendedText,
   Searchbar,
   Datepicker

@@ -22,6 +22,7 @@ import {
   TwitterShare,
   Header,
   ExtendedText,
+  Checkbox,
   Switch,
   Notification,
   StickyButton,
@@ -45,11 +46,6 @@ class Demo extends Component {
     checked: false,
     value: ""
   };
-
-  handleChecked = () => {
-    this.setState({ ...this.state, checked: !this.state.checked });
-  };
-
   handleChange2 = e => {
     this.setState({ value: e.target.value });
   };
@@ -58,12 +54,26 @@ class Demo extends Component {
     e.preventDefault();
     window.alert("You submit the value : " + this.state.value);
   };
-
   render() {
     const items = ['One', 'Two', 'Three']
     const handleChange1 =  ()=> {
       console.log("abcd");
     };
+
+    let options = [
+      {
+        id: 1,
+        label: 'Cat'
+      },
+      {
+        id: 2,
+        label: 'Dog'
+      },
+      {
+        id: 2,
+        label: 'Monkey'
+      },
+    ]
 
     return (
       <div>
@@ -238,6 +248,7 @@ class Demo extends Component {
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
 
+        <Checkbox options={options} onClick={handleChange} title="Animals"></Checkbox>
         <h2>Datepicker Component</h2>
         <Datepicker></Datepicker>
       </div>
