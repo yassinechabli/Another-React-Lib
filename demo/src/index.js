@@ -1,39 +1,35 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
+import React, { Component } from 'react';
+import { render } from 'react-dom';
 
-import SimpleRedButton from '../../src/SimpleRedButton/SimpleRedButton'
-
-import Button from '../../src/Button/Button';
-import FlatButton from '../../src/FlatButton/FlatButton';
+// * Table
+import Table from '../../src/Table/Table';
+import '../../src/Table/Table.css';
 
 class Demo extends Component {
-
-
   render() {
-    return(
+    return (
       <div>
-        <Button text={'best button ever'} size='medium' styles={{color:'white'}} buttonColor='blue' handleClick = {() => alert('hello world')} />
-        <br />
-        <br />
-        <br />
-        <h1>Flat Buttons</h1>
-        <FlatButton text={'best button ever'} size='small' buttonColor='red' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='green' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='blue' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='grey' handleClick = {() => alert('Flatted world')} />
-        <br />
-        <br />
-        <FlatButton text={'best button ever'} size='small' buttonColor='black' handleClick = {() => alert('Flatted world')} />
+        <Table
+          headerColor={'#333333'}
+          border={true}
+          borderColor={'#333333'}
+          borderWidth={5}
+          fontSize={68}
+          headerFontColor={'#c095ca'}
+          rowFontColor={'#89cf71'}
+          stripped={true}
+          hoverEffect={true}
+          // rowBackgroundColor={'#4e8453'}
+          data={[
+            { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
+            { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
+            { id: 3, name: 'Saad', age: 16, email: 'saad@email.com' },
+            { id: 4, name: 'Asad', age: 25, email: 'asad@email.com' }
+          ]}
+        />
       </div>
     );
   }
 }
 
-render(<Demo />, document.querySelector('#demo'))
-
+render(<Demo />, document.querySelector('#demo'));
