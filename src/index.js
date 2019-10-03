@@ -1,31 +1,33 @@
 import LoadingButton from "./LoadingButton";
 import SimpleRedButton from "./SimpleRedButton/SimpleRedButton";
 import GhostButton from "./GhostButton/GhostButton";
-import Collapse from "./Collapse/Collapse"
-import Profile from "./Profile/Profile"
-import SearchBar from "./SearchBar/Searchbar"
-import ExtendedText from "./ExtendedText/ExtendedText"
 import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
+import Avatar from "./Avatar/Avatar";
+import Collapse from "./Collapse/Collapse";
+import SocialIcon from "./SocialIcon/SocialIcon";
+import Profile from "./Profile/Profile"
 
-import ProgressBar from "./ProgressBar/ProgressBar"
-import FlatButton from './FlatButton/FlatButton';
-import {Radio, RadioGroup} from './RadioButton/radio'
-import Tabs from './Tabs/Tabs';
-import Tab from './Tabs/Tab'
-import Dropdown from './Dropdown/Dropdown';
-import TwitterShare from './TwitterShareButton/twitterShare'
-import Switch from './Switch/Switch'
+import ProgressBar from "./ProgressBar/ProgressBar";
+import FlatButton from "./FlatButton/FlatButton";
+import { Radio, RadioGroup } from "./RadioButton/radio";
+import Tabs from "./Tabs/Tabs";
+import Tab from "./Tabs/Tab";
+import Dropdown from "./Dropdown/Dropdown";
+import TwitterShare from "./TwitterShareButton/twitterShare";
+import Switch from "./Switch/Switch";
+import Notification from "./Notification/Notification";
+import ExtendedText from "./ExtendedText/ExtendedText";
+import Searchbar from "./SearchBar/Searchbar";
+import Datepicker from "./Datepicker/Datepicker";
 
 
-export { 
+
+export {
   LoadingButton,
   SimpleRedButton,
   GhostButton,
-  Collapse,
-  Profile,
-  SearchBar,
   Button,
   Header,
   FlatButton,
@@ -37,6 +39,13 @@ export {
   RadioGroup,
   Dropdown,
   Switch,
+  TwitterShare,
+  Avatar,
+  SocialIcon,
+  Notification,
+  Profile,
+  Collapse,
   ExtendedText,
-  TwitterShare
+  Searchbar,
+  Datepicker
 };
