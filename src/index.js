@@ -16,8 +16,8 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
-import SearchBar from "./SearchBar/Searchbar";
-import Datepicker from './Datepicker/Datepicker'
+import Searchbar from "./SearchBar/Searchbar";
+import Datepicker from "./Datepicker/Datepicker";
 
 
 
@@ -26,7 +26,7 @@ export {
   SimpleRedButton,
   Collapse,
   Profile,
-  SearchBar,
+  Searchbar,
   GhostButton,
   Button,
   Header,
