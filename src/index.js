@@ -21,7 +21,6 @@ import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
 import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
-import Spinner from "./Spinner/Spinner";
 
 
 
@@ -48,6 +47,5 @@ export {
   Collapse,
   ExtendedText,
   Searchbar,
-  Datepicker,
-  Spinner
+  Datepicker
 };

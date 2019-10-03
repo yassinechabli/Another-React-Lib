@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import "./index.css";
+import "./index.css";n
 import {
   Avatar,
   Button,
@@ -24,8 +24,7 @@ import {
   ExtendedText,
   Switch,
   Notification,
-  Datepicker,
-  Spinner
+  Datepicker
 } from "../../src/index";
 
 const Tab1 = () => {
@@ -163,15 +162,15 @@ class Demo extends Component {
 
         <h2>Progress Bar Component</h2>
         <ProgressBar progress={9}
-          fillColor={'red'}
-          containerClassName='container-style'
-          containerStyle={{
-            justifyContent: 'center',
-            height: 50,
-            borderRadius: 0,
-            borderWidth: 1,
-            borderColor: 'black'
-          }} />
+                     fillColor={'red'}
+                     containerClassName='container-style'
+                     containerStyle={{
+                       justifyContent: 'center',
+                       height: 50,
+                       borderRadius: 0,
+                       borderWidth: 1,
+                       borderColor: 'black'
+                     }} />
         <br />
 
         <h2>Radio Buttons</h2>
@@ -230,12 +229,6 @@ class Demo extends Component {
         <h2>Datepicker Component</h2>
         <Datepicker></Datepicker>
 
-        <br/>
-        <div style={{position: 'relative', height: '300px'}}>
-          <Spinner size={'md'} color={'accent'} />
-        </div>
-        <br/>
-        <br/>
       </div>
     );
   }
