@@ -14,7 +14,7 @@ import {
   TwitterShare,
   Header,
   ExtendedText,
-  SearchBar,
+  Searchbar,
   Switch,
   Notification,
   Datepicker
@@ -125,7 +125,7 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
 
-        <SearchBar></SearchBar>
+        <Searchbar></Searchbar>
 
         <br />
         <ExtendedText
