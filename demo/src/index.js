@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import "./index.css";
+import "./index.css";n
 import { 
   Avatar, 
   Button, 
@@ -22,7 +22,8 @@ import {
   TwitterShare, 
   Header, 
   ExtendedText, 
-  Switch
+  Switch,
+  Notification
 } from "../../src/index";
 
 const Tab1 = () => {
@@ -85,6 +86,7 @@ class Demo extends Component {
         <h2>Dropdown Component</h2>
         <Dropdown menuItems={items} onItemClick={this.handleItemClick} />
         <br />
+          
         <h2>Extended Text Component</h2>
         <ExtendedText
           characterAmount={10}
@@ -93,6 +95,7 @@ class Demo extends Component {
           }
         />
         <br />
+            
         <h2>Flat Buttons</h2>
         <FlatButton
           text={"best button ever"}
@@ -129,6 +132,12 @@ class Demo extends Component {
         <br />
         Not Loading =
         <LoadingButton/>
+        <br />
+
+        <h2>Notification</h2>
+        <Notification number={10} color={"red"} />
+        <br />
+        <Notification number={10} color={"blue"} />
         <br />
 
         <h2>Profile Component</h2>
