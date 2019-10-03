@@ -15,7 +15,7 @@ Just another React Library filled with awesome reusable components
 [npm]: https://www.npmjs.org/package/npm-package
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[coveralls]: https://coveralls.io/github/NehemiahK/Another-React-Lib
 
 ## Install ##
 Navigate into your React project and run the following command:  

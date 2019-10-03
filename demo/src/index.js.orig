@@ -248,9 +248,13 @@ class Demo extends Component {
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
 
+<<<<<<< HEAD
+        <Checkbox options={options} onClick={handleChange} title="'Animals'"></Checkbox>
+=======
         <Checkbox options={options} onClick={handleChange} title="Animals"></Checkbox>
         <h2>Datepicker Component</h2>
         <Datepicker></Datepicker>
+>>>>>>> cfac7e570353e750bdd009288b08177ace135942
       </div>
     );
   }
