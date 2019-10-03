@@ -14,10 +14,10 @@ import {
   TwitterShare,
   Header,
   ExtendedText,
-  SearchBar,
-  Switch
+  Searchbar,
+  Switch,
+  Notification
 } from "../../src/index";
-
 
 const Tab1 = () => {
   return <div>Tab1</div>;
@@ -88,6 +88,12 @@ class Demo extends Component {
         />
         <br />
 
+        <h2>Notification</h2>
+        <Notification number={10} color={"red"} />
+        <br />
+        <Notification number={10} color={"blue"} />
+        <br />
+
         <h2>Profile Component</h2>
         <Profile
           name={"Joshua"}
@@ -106,7 +112,6 @@ class Demo extends Component {
           ]}
         />
 
-
         <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
           <Tab component={Tab1} title="Default Tab" />
@@ -119,7 +124,7 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
 
-        <SearchBar></SearchBar>
+        <Searchbar></Searchbar>
 
         <br />
         <ExtendedText
@@ -129,6 +134,13 @@ class Demo extends Component {
           }
         />
 
+        <br />
+        <ExtendedText
+          characterAmount={10}
+          text={
+            "This is sample display text that can be expanded to view in its entirety by clicking read more."
+          }
+        />
 
         <h2>Share on Twitter</h2>
         <TwitterShare message="Hi" size="md" />
