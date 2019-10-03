@@ -1,20 +1,36 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Checkbox.css"
 
+/**
+ * Simple checkbox component
+ * Render a checkbox
+ * E.g.:
+ * ```html
+ *  <Checkbox options={options} onClick={handleChange} title="Animals"></Checkbox>
+ * ```
+ */
 const Checkbox = ({
     title = '',
     options = [],
     onItemClick = () => { }
 }) => {
     return (
-        <div >
-            <label>{title}</label>
+        <div className="container">
+
+            <div className="checkbox-title">
+                <label ><b>{title} :</b></label>
+            </div>
+
             <form>
                 {options.map((value, index) => {
                     return (
                         <div>
-                            <input type="checkbox" id={value.id} name="checkbox" onClick={() => onItemClick(item.id)}/>
-                            <label for="checkbox">{value.label}</label>
+                            <label class="container"> {value.label}
+                                <input type="checkbox" id={value.id} name="checkbox" onClick={() => onItemClick(item.id)} className=".regular-checkbox" />
+                                <span class="checkmark"></span>
+                            </label>
+
                         </div>
                     );
                 })}
