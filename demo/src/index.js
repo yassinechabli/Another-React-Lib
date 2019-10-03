@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, Searchbar, Switch } from '../../src/index';
+import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, SearchBar, Switch, Datepicker } from '../../src/index';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -27,9 +27,6 @@ class Demo extends Component {
     
     return(
       <div>
-
-     
-
         <Header/>
         <h2>Collapse Component</h2>
         <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'}/>
@@ -74,8 +71,7 @@ class Demo extends Component {
           <Radio value="Apple" /> 
         </RadioGroup>
 
-
-        <Searchbar></Searchbar>
+        <SearchBar></SearchBar>
    
 
         <br/>
@@ -87,8 +83,9 @@ class Demo extends Component {
         
       <h2>Form Component</h2>
       <Form fields={["input", "textarea", "button"]} />
-          </div>
 
+      <Datepicker></Datepicker>
+      </div>
     );
   }
 }
