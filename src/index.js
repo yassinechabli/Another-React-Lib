@@ -16,7 +16,7 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
-import SearchBar from "./SearchBar/Searchbar";
+import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
 
 export {
@@ -39,6 +39,6 @@ export {
   Profile,
   Collapse,
   ExtendedText,
-  SearchBar,
+  Searchbar,
   Datepicker
 };
