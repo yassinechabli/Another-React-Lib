@@ -20,7 +20,8 @@ import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
 import StickyButton from './StickyButton/StickyButton'
-import SearchBar from "./SearchBar/Searchbar";
+import Searchbar from "./SearchBar/Searchbar";
+import Datepicker from "./Datepicker/Datepicker";
 
 
 
@@ -47,5 +48,6 @@ export {
   Notification,
   Profile,
   ExtendedText,
-  SearchBar
+  Searchbar,
+  Datepicker
 };
