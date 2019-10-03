@@ -12,6 +12,7 @@ import Collapse from '../../src/Collapse/Collapse';
 
 import Tabs from '../../src/Tabs/Tabs';
 import Tab from '../../src/Tabs/Tab';
+import SimpleDropdown from '../../src/SimpleDropdown/SimpleDropdown';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -25,6 +26,9 @@ const Tab2 = () => {
 
 class Demo extends Component {
 
+  handleOnChange=(event)=>{
+    alert('you selected ', event.target.value);
+  }
 
   render() {
     return(
@@ -56,6 +60,8 @@ class Demo extends Component {
           <Tab component={Tab1} title="Default Tab"/>
           <Tab component={Tab2} title="Tab 2"/>
         </Tabs>
+        <br />
+        <SimpleDropdown options={['option 1','option 2','option 3','option 4']} handleOnChange={this.handleOnChange} />
       </div>
     );
 
