@@ -4,7 +4,8 @@ import GhostButton from "./GhostButton/GhostButton";
 import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
-
+import Collapse from "./Collapse/Collapse";
+import Profile from "./Profile/Profile";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import FlatButton from "./FlatButton/FlatButton";
 import { Radio, RadioGroup } from "./RadioButton/radio";
@@ -13,11 +14,11 @@ import Tab from "./Tabs/Tab";
 import Dropdown from "./Dropdown/Dropdown";
 import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
-import Collapse from "./Collapse/Collapse";
-import Profile from "./Profile/Profile";
-import SearchBar from "./SearchBar/Searchbar";
+import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
-import Checkbox from "./Checkbox/Checkbox"
+import Checkbox from "./Checkbox/Checkbox";
+import SearchBar from "./SearchBar/Searchbar";
+
 
 export {
   LoadingButton,
@@ -34,10 +35,11 @@ export {
   RadioGroup,
   Dropdown,
   Switch,
-  ExtendedText,
   TwitterShare,
-  Collapse,
+  Notification,
   Profile,
-  SearchBar,
-  Checkbox
+  Checkbox,
+  Collapse,
+  ExtendedText,
+  SearchBar
 };
