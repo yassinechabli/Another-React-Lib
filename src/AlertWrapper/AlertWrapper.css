@@ -1,0 +1,26 @@
+.alert-container .alert-message {
+    margin-top: 1rem;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    border-radius: .25rem;
+    display: inline-block;
+    min-width: 60%;
+}
+
+.wrapper-container .alert-message {
+    display: none;
+}
+
+.alert-container .error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-container .warning-message {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
