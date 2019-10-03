@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom'
 import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, SearchBar, Switch, Datepicker } from '../../src/index';
+import { Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, SearchBar, Switch, Datepicker } from '../../src/index';
 
 const Tab1 = () => {
   return <div>Tab1</div>
@@ -78,13 +78,14 @@ class Demo extends Component {
         <ExtendedText characterAmount={10} text={'This is sample display text that can be expanded to view in its entirety by clicking read more.'} />
 
 
-    <h2>Share on Twitter</h2>   
-      <TwitterShare message="Hi" size="md"/>
-        
-      <h2>Form Component</h2>
-      <Form fields={["input", "textarea", "button"]} />
+        <h2>Share on Twitter</h2>
+        <TwitterShare message="Hi" size="md"/>
 
-      <Datepicker></Datepicker>
+        <h2>Form Component</h2>
+        <Form fields={["input", "textarea", "button"]} />
+
+        <h2> Datepicker Component </h2>
+        <Datepicker></Datepicker>
       </div>
     );
   }
