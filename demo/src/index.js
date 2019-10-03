@@ -1,50 +1,74 @@
-import React, { Component } from 'react'
-import { render } from 'react-dom'
-import './index.css'
-import {Button, Collapse, FlatButton, Form, Profile, SimpleRedButton, Tabs, Tab, Radio, RadioGroup, TwitterShare, Header, ExtendedText, SearchBar, Switch, StickyButton } from '../../src/index';
-
+import React, { Component } from "react";
+import { render } from "react-dom";
+import "./index.css";n
+import { 
+  Avatar, 
+  Button, 
+  Collapse, 
+  Dropdown, 
+  FlatButton, 
+  Form, 
+  GhostButton, 
+  LoadingButton, 
+  ProgressBar, 
+  Profile, 
+  Tabs, 
+  Tab, 
+  Radio, 
+  RadioGroup, 
+  SimpleRedButton, 
+  SocialIcon, 
+  Searchbar, 
+  TwitterShare, 
+  Header, 
+  ExtendedText, 
+  Switch,
+  Notification,
+  StickyButton
+} from "../../src/index";
 
 const Tab1 = () => {
   return <div>Tab1</div>;
-};
+}
 
 const Tab2 = () => {
   return <div>Tab2</div>;
-};
+}
 
 class Demo extends Component {
+  handleItemClick(item) {
+    window.alert("You selected : " + item);
+  };
+
   state = {
-    checked: false
+    checked: false,
+    value: ""
   };
 
   handleChecked = () => {
     this.setState({ ...this.state, checked: !this.state.checked });
   };
 
+  handleChange2 = e => {
+    this.setState({ value: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    window.alert("You submit the value : " + this.state.value);
+  };
+
   render() {
-    const handleChange = () => {
+    const items = ['One', 'Two', 'Three']
+    const handleChange1 =  ()=> {
       console.log("abcd");
     };
 
     return (
       <div>
-        <Header />
-        <h2>Collapse Component</h2>
-        <Collapse collapseHeader={"Click me"} collapseBody={"Sup, dude!"} />
+        <h2>Avatar Component</h2>
+        <Avatar src='https://pickaface.net/gallery/avatar/unr_test_161024_0535_9lih90.png' />
         <br />
-
-        <Switch
-          value="Switch 1"
-          checked={!this.state.checked}
-          onClick={this.handleChecked}
-        />
-        <br />
-        <br />
-        <Switch
-          value="Switch 2"
-          checked={this.state.checked}
-          onClick={this.handleChecked}
-        />
 
         <h2>Button Component</h2>
         <Button
@@ -56,6 +80,23 @@ class Demo extends Component {
         />
         <br />
 
+        <h2>Collapse Component</h2>
+        <Collapse collapseHeader={'Click me'} collapseBody={'Sup, dude!'} />
+        <br />
+
+        <h2>Dropdown Component</h2>
+        <Dropdown menuItems={items} onItemClick={this.handleItemClick} />
+        <br />
+          
+        <h2>Extended Text Component</h2>
+        <ExtendedText
+          characterAmount={10}
+          text={
+            "This is sample display text that can be expanded to view in its entirety by clicking read more."
+          }
+        />
+        <br />
+            
         <h2>Flat Buttons</h2>
         <FlatButton
           text={"best button ever"}
@@ -65,12 +106,39 @@ class Demo extends Component {
         />
 
         <br />
-        <FlatButton
-          text={"best button ever"}
-          size="small"
-          buttonColor="green"
-          handleClick={() => alert("Flatted world")}
-        />
+        <FlatButton 
+          text={'best button ever'} 
+          size='small' 
+          buttonColor='green' 
+          handleClick = {() => alert('Flatted world')} />
+        <br />
+        
+        <h2>Form Component</h2>
+        <Form fields={["input", "textarea", "button"]} />
+        <br />
+
+        <h2>Ghost Button</h2>
+        <GhostButton buttonColor='red' text={"Spooky Button"} size='small' handleClick = {() => alert('Boo!')} />
+        <br />
+        <GhostButton buttonColor='green' text={"Spooky Button"} size='small' handleClick = {() => alert('Boo!')} />
+        <br />
+
+        <h2>Header Component</h2>
+        <Header brandName={"My Awesome Site"} />
+        <br />
+        
+        <h2>Loading Button Component</h2>
+        Loading = 
+        <LoadingButton loading={true}/>
+        <br />
+        Not Loading =
+        <LoadingButton/>
+        <br />
+
+        <h2>Notification</h2>
+        <Notification number={10} color={"red"} />
+        <br />
+        <Notification number={10} color={"blue"} />
         <br />
 
         <h2>Profile Component</h2>
@@ -90,29 +158,40 @@ class Demo extends Component {
             { name: "facebook", source: "https://www.facebook.com/zuck" }
           ]}
         />
+        <br />
 
+        <h2>Progress Bar Component</h2>
+        <ProgressBar progress={9}
+          fillColor={'red'}
+          containerClassName='container-style'
+          containerStyle={{
+            justifyContent: 'center',
+            height: 50,
+            borderRadius: 0,
+            borderWidth: 1,
+            borderColor: 'black'
+          }} />
+        <br />
 
-        <h2>Tab Component</h2>
-        <Tabs defaultTab={0}>
-          <Tab component={Tab1} title="Default Tab" />
-          <Tab component={Tab2} title="Tab 2" />
-        </Tabs>
-
-        <h2>Radio Buttons </h2>
-        <RadioGroup name="xx" selectedValue="Orange" onChange={handleChange}>
+        <h2>Radio Buttons</h2>
+        <RadioGroup name="xx" selectedValue="Orange" onChange={handleChange1}>
           <Radio value="Orange" />
           <Radio value="Apple" />
         </RadioGroup>
-
-        <SearchBar></SearchBar>
-
         <br />
-        <ExtendedText
-          characterAmount={10}
-          text={
-            "This is sample display text that can be expanded to view in its entirety by clicking read more."
-          }
+        
+        <h2>Search Bar Component</h2>
+        <Searchbar
+          value={this.state.value}
+          onChange={this.handleChange2}
+          onSubmit={this.handleSubmit}
         />
+        <br />
+        
+        <h2>Simple Red Button</h2>
+        <SimpleRedButton text={"Shinny Red Button"}/>
+        <br />
+
 
             
     <h2>Share on Twitter</h2>   
@@ -124,6 +203,35 @@ class Demo extends Component {
         <h2>Sticky Button</h2>
         <StickyButton text={'Go Top'} buttonColor='blue' size='sm' behavior='smooth' />
       
+        <h2>Social Icon Component</h2>
+        <SocialIcon name={"twitter"} />
+        <SocialIcon name={"facebook"} />
+        <br />
+          
+        <h2>Switch Component</h2>
+        <Switch
+          value="Switch 1"
+          checked={!this.state.checked}
+          onClick={this.handleChecked}
+        />
+        <br />
+        <br />
+        <Switch
+          value="Switch 2"
+          checked={this.state.checked}
+          onClick={this.handleChecked}
+        />
+        <br />
+            
+        <h2>Tab Component</h2>
+        <Tabs defaultTab={0}>
+          <Tab component={Tab1} title="Default Tab" />
+          <Tab component={Tab2} title="Tab 2" />
+        </Tabs>
+        <br />
+
+        <h2>Twitter Share Component</h2>
+        <TwitterShare message="Hi" size="md" />
       </div>
     );
   }

@@ -4,6 +4,10 @@ import GhostButton from "./GhostButton/GhostButton";
 import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
+import Avatar from "./Avatar/Avatar";
+import Collapse from "./Collapse/Collapse";
+import SocialIcon from "./SocialIcon/SocialIcon";
+import Profile from "./Profile/Profile"
 
 import ProgressBar from "./ProgressBar/ProgressBar";
 import FlatButton from "./FlatButton/FlatButton";
@@ -13,11 +17,12 @@ import Tab from "./Tabs/Tab";
 import Dropdown from "./Dropdown/Dropdown";
 import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
-import Collapse from "./Collapse/Collapse";
-import Profile from "./Profile/Profile";
-import SearchBar from "./SearchBar/Searchbar";
+import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
 import StickyButton from './StickyButton/StickyButton'
+import SearchBar from "./SearchBar/Searchbar";
+
+
 
 export {
   LoadingButton,
@@ -34,10 +39,13 @@ export {
   RadioGroup,
   Dropdown,
   Switch,
-  ExtendedText,
   TwitterShare,
   StickyButton,
   Collapse,
+  Avatar,
+  SocialIcon,
+  Notification,
   Profile,
+  ExtendedText,
   SearchBar
 };
