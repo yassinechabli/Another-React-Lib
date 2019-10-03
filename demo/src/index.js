@@ -24,6 +24,7 @@ import {
   ExtendedText,
   Switch,
   Notification,
+  StickyButton,
   Datepicker
 } from "../../src/index";
 
@@ -192,6 +193,17 @@ class Demo extends Component {
         <SimpleRedButton text={"Shinny Red Button"}/>
         <br />
 
+
+            
+    <h2>Share on Twitter</h2>   
+      <TwitterShare message="Hi" size="md"/>
+        
+      <h2>Form Component</h2>
+      <Form fields={["input", "textarea", "button"]} />
+      
+        <h2>Sticky Button</h2>
+        <StickyButton text={'Go Top'} buttonColor='blue' size='sm' behavior='smooth' />
+      
         <h2>Social Icon Component</h2>
         <SocialIcon name={"twitter"} />
         <SocialIcon name={"facebook"} />

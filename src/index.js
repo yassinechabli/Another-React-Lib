@@ -20,6 +20,7 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
+import StickyButton from './StickyButton/StickyButton'
 import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
 
@@ -42,11 +43,12 @@ export {
   Dropdown,
   Switch,
   TwitterShare,
+  StickyButton,
+  Collapse,
   Avatar,
   SocialIcon,
   Notification,
   Profile,
-  Collapse,
   ExtendedText,
   Searchbar,
   Datepicker
