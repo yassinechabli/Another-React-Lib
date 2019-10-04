@@ -4,7 +4,7 @@
 import React from 'react';
 import {AlertWrapper} from "another-react-lib" 
 
-class MyApp extends React.Component {
+class App extends React.Component {
 
     constructor() {
         this.state = {
