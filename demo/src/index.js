@@ -171,6 +171,7 @@ class Demo extends Component {
         />
         <br />
         <h2>Progress Bar Component</h2>
+
         <ProgressBar
           progress={9}
           fillColor={"red"}
@@ -183,6 +184,7 @@ class Demo extends Component {
             borderColor: "black"
           }}
         />
+
         <br />
         <h2>Radio Buttons</h2>
         <RadioGroup name="xx" selectedValue="Orange" onChange={handleChange1}>
