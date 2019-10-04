@@ -98,7 +98,7 @@ class Demo extends Component {
         <h2>Dropdown Component</h2>
         <Dropdown menuItems={items} onItemClick={this.handleItemClick} />
         <br />
-          
+
         <h2>Extended Text Component</h2>
         <ExtendedText
           characterAmount={10}
@@ -107,7 +107,7 @@ class Demo extends Component {
           }
         />
         <br />
-            
+
         <h2>Flat Buttons</h2>
         <FlatButton
           text={"best button ever"}
@@ -117,13 +117,13 @@ class Demo extends Component {
         />
 
         <br />
-        <FlatButton 
-          text={'best button ever'} 
-          size='small' 
-          buttonColor='green' 
+        <FlatButton
+          text={'best button ever'}
+          size='small'
+          buttonColor='green'
           handleClick = {() => alert('Flatted world')} />
         <br />
-        
+
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
         <br />
@@ -137,9 +137,9 @@ class Demo extends Component {
         <h2>Header Component</h2>
         <Header brandName={"My Awesome Site"} />
         <br />
-        
+
         <h2>Loading Button Component</h2>
-        Loading = 
+        Loading =
         <LoadingButton loading={true}/>
         <br />
         Not Loading =
@@ -173,15 +173,15 @@ class Demo extends Component {
 
         <h2>Progress Bar Component</h2>
         <ProgressBar progress={9}
-          fillColor={'red'}
-          containerClassName='container-style'
-          containerStyle={{
-            justifyContent: 'center',
-            height: 50,
-            borderRadius: 0,
-            borderWidth: 1,
-            borderColor: 'black'
-          }} />
+                     fillColor={'red'}
+                     containerClassName='container-style'
+                     containerStyle={{
+                       justifyContent: 'center',
+                       height: 50,
+                       borderRadius: 0,
+                       borderWidth: 1,
+                       borderColor: 'black'
+                     }} />
         <br />
 
         <h2>Radio Buttons</h2>
@@ -190,7 +190,7 @@ class Demo extends Component {
           <Radio value="Apple" />
         </RadioGroup>
         <br />
-        
+
         <h2>Search Bar Component</h2>
         <Searchbar
           value={this.state.value}
@@ -198,7 +198,7 @@ class Demo extends Component {
           onSubmit={this.handleSubmit}
         />
         <br />
-        
+
         <h2>Simple Red Button</h2>
         <SimpleRedButton text={"Shinny Red Button"}/>
         <br />
@@ -218,7 +218,7 @@ class Demo extends Component {
         <SocialIcon name={"twitter"} />
         <SocialIcon name={"facebook"} />
         <br />
-          
+
         <h2>Switch Component</h2>
         <Switch
           value="Switch 1"
@@ -233,7 +233,7 @@ class Demo extends Component {
           onClick={this.handleChecked}
         />
         <br />
-            
+
         <h2>Tab Component</h2>
         <Tabs defaultTab={0}>
           <Tab component={Tab1} title="Default Tab" />
