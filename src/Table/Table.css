@@ -1,0 +1,33 @@
+#data {
+  text-align: center;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  width: 100%;
+}
+
+​ #data td,
+#data th {
+  padding: 8px;
+}
+
+​ #bordered {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+​ #data .striped:nth-child(even) {
+  background-color: #333333;
+}
+
+​ #data .hover-row:hover {
+  background-color: #ddd;
+}
+
+​ #data th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4caf50;
+  color: white;
+}

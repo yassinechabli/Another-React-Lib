@@ -2,14 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./Checkbox.css"
 
-/**
- * Simple checkbox component
- * Render a checkbox
- * E.g.:
- * ```html
- *  <Checkbox options={options} onClick={handleChange} title="Animals"></Checkbox>
- * ```
- */
+
 const Checkbox = ({
     title = '',
     options = [],
@@ -39,7 +32,8 @@ const Checkbox = ({
     );
 };
 
-Checkbox.propTpes = {
+Checkbox.propTypes = {
+    title: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     onItemClick: PropTypes.func
 };

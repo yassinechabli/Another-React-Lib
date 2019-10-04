@@ -3,13 +3,11 @@ import SimpleRedButton from "./SimpleRedButton/SimpleRedButton";
 import GhostButton from "./GhostButton/GhostButton";
 import Button from "./Button/Button";
 import Header from "./Header/Header";
-import Heading from "./Heading/Heading";
 import Form from "./Form/Form";
 import Avatar from "./Avatar/Avatar";
 import Collapse from "./Collapse/Collapse";
 import SocialIcon from "./SocialIcon/SocialIcon";
-import Profile from "./Profile/Profile"
-
+import Profile from "./Profile/Profile";
 import ProgressBar from "./ProgressBar/ProgressBar";
 import FlatButton from "./FlatButton/FlatButton";
 import { Radio, RadioGroup } from "./RadioButton/radio";
@@ -22,14 +20,16 @@ import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
 import Spinner from "./Spinner/Spinner"
 import Checkbox from "./Checkbox/Checkbox";
-import StickyButton from './StickyButton/StickyButton'
+import StickyButton from "./StickyButton/StickyButton";
 import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
-
+import DeleteButton from './DeleteButton/DeleteButton'
+import Reaction from "./Reaction/Reaction";
 export {
   LoadingButton,
   SimpleRedButton,
   GhostButton,
+  DeleteButton,
   Button,
   Header,
   Heading,
@@ -53,5 +53,6 @@ export {
   ExtendedText,
   Searchbar,
   Datepicker,
-  Spinner
+  Reaction
 };
+
