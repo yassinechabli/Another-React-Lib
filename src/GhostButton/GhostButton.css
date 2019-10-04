@@ -1,27 +1,27 @@
-.green {
+.ghost-button-green {
   border: 2px solid #4caf50;
 } /* Green */
-.blue {
+.ghost-button-blue {
   border: 2px solid #008cba;
 } /* Blue */
-.red {
+.ghost-button-red {
   border: 2px solid #f44336;
 } /* Red */
-.gray {
+.ghost-button-gray {
   border: 2px solid #e7e7e7;
   color: black;
 } /* Gray */
-.black {
+.ghost-button-black {
   border: 2px solid #555555;
 } /* Black */
 
-.small {
+.ghost-button-small {
   font-size: 16px;
 }
-.medium {
+.ghost-button-medium {
   font-size: 22px;
 }
-.large {
+.ghost-button-large {
   font-size: 30px;
 }
 
