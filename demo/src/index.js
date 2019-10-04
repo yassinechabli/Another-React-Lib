@@ -27,6 +27,7 @@ import {
   Notification,
   StickyButton,
   Datepicker,
+  DeleteButton,
   Reaction
 } from "../../src/index";
 
@@ -104,6 +105,11 @@ class Demo extends Component {
           }
         />
         <br />
+            
+      	<h2>Delete Button</h2>
+        <DeleteButton text={'best button ever'} size='small' buttonColor='red' handleClick = {() => alert('Delete Item?')} />
+        <br />
+      
         <h2>Flat Buttons</h2>
         <FlatButton
           text={"best button ever"}
