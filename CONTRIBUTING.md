@@ -87,6 +87,7 @@ That's it, you've made a pull request.
 ## General Guidelines for Contributing
 
 * *Please*, do not touch the index files.
+* *Please* use unique names for your CSS classes(preferably use [ComponentName].[className] instead of just [className]) to prevent overlap with classes of other components.
 * Contributing documentation would be very welcome (and is easy to do).
 * When making a pull request, please link to the issue being resolved. This makes my life much easier.
 * Making an example of how to use the component and which props the component will use would be awesome.
