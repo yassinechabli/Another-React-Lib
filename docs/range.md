@@ -1,7 +1,10 @@
 ## Usage
 
 ```js
-import React from 'react';
+import React, { useState } from 'react'
+import { render } from 'react-dom'
+import Range from '../../src/Range/Range'
+
 const RangeDemo = () => {
   const getRandomNumberBetween = (min, max) => Math.random() * (max - min) + min
 
@@ -22,7 +25,7 @@ const RangeDemo = () => {
     setAlphaValue(getRandomNumberBetween(0, 1))
   }
 
-  const color = `rgba(${redValue}, ${greenValue}, ${blueValue}, ${alphaValue})`
+  const color = `rgba(${redValue.toFixed(0)}, ${greenValue.toFixed(0)}, ${blueValue.toFixed(0)}, ${alphaValue.toFixed(4)})`
 
   return (
     <div>
@@ -34,29 +37,40 @@ const RangeDemo = () => {
           border: '.5rem solid black',
           margin: '1rem auto',
           borderRadius: '100%',
-          backgroundColor: color
+          backgroundColor: color,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textShadow: 'white 0px 0px 1px, white 0px 0px 2px, white 0px 0px 3px, white 0px 0px 4px, 0px 0px 5px white',
+          textAlign: 'center',
+          userSelect: 'none',
+          cursor: 'pointer'
         }}
         onClick={setToRandom}
-      />
-      <div style={{ textAlign: 'center' }}>{ color }</div>
+      >
+        Click for a <br /> Random Color
+      </div>
+      <div style={{ textAlign: 'center', overflow: 'auto' }}>{ color }</div>
       <div style={{ display: 'flex' }}>
-        <Range style={{ width: '33.33%' }} dotColor='red' min={0} max={255} value={redValue} onChange={updateRed} />
-        <Range style={{ width: '33.33%' }} dotColor='green' min={0} max={255} value={greenValue} onChange={updateGreen} />
-        <Range style={{ width: '33.33%' }} dotColor='blue' min={0} max={255} value={blueValue} onChange={updateBlue} />
+        <Range style={{ width: '33.33%' }} dotColor='#FF0000' min={0} max={255} value={redValue} onChange={updateRed} />
+        <Range style={{ width: '33.33%' }} dotColor='#00FF00' min={0} max={255} value={greenValue} onChange={updateGreen} />
+        <Range style={{ width: '33.33%' }} dotColor='#0000FF' min={0} max={255} value={blueValue} onChange={updateBlue} />
       </div>
       <Range dotColor='grey' min={0} max={1} value={alphaValue} onChange={updateAlpha} />
     </div>
   )
 }
+
+export default RangeDemo
+
 ```
 
 ### Properties
 
-| Property   | Type     | Required | Default value | Description                                       |
-| :--------- | :------- | :------- | :------------ | :------------------------------------------------ |
-| `value`    | number   | yes      | 0             | Progress of the bar                               |
-| `min`      | object   | no       | {}            | Style object of the container of the progress bar |
-| `max`      | string   | no       | ''            | Classname of the container of the progress bar    |
-| `step`     | string   | no       | red           | Color that must fill the bar.                     |
-| `dotColor` | string   | no       | red           | Color that must fill the bar.                     |
-| `onChange` | function | no       | red           | Color that must fill the bar.                     |
+| Property   | Type     | Required | Default value | Description                                           |
+| :--------- | :------- | :------- | :------------ | :---------------------------------------------------- |
+| `min`      | object   | no       | 0             | The smallest value, furthest left of the bar.         |
+| `max`      | string   | no       | 100           | The largest value, furthest right of the bar.         |
+| `value`    | number   | no       | 0             | Value between `min` and `max`                         |
+| `dotColor` | string   | no       | 'black'       | Color of the dot                                      |
+| `onChange` | function | no       |               | Called with `(newValue, oldValue)` on a value change. |

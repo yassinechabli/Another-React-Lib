@@ -23,13 +23,22 @@ const parseCSS = input => {
 
 // TODO: Figure out how to implement Step
 
-const Range = ({ className, min, max, value: initialValue, step, onChange, dotColor, ...rest }) => {
+const Range = ({
+  className,
+  min,
+  max,
+  value: specifiedValue,
+  step,
+  onChange,
+  dotColor,
+  ...rest
+}) => {
   const dotElementReference = useRef()
   const rangeRootElementReference = useRef()
   const pointerPosition = usePointerPosition()
 
   const [calculatedPercentage, setCalculatedPercentage] = useState(0) // eslint-disable-line no-unused-vars
-  const [activeValue, setActiveValue] = useState(initialValue || 0)
+  const [activeValue, setActiveValue] = useState(specifiedValue || 0)
   const [dotPosition, setDotPosition] = useState(0)
   const [isActive, setIsActive] = useState(false)
 
@@ -79,17 +88,17 @@ const Range = ({ className, min, max, value: initialValue, step, onChange, dotCo
 
   const initialize = () => {
     setActiveValue(existingValue => {
-      const existingValuePercentage = (existingValue - min) / (max - min)
-      updatePercentage(existingValuePercentage)
-      return existingValue
+      const importantValue = existingValue !== specifiedValue ? specifiedValue : existingValue
+      updatePercentage((importantValue - min) / (max - min))
+      return importantValue
     })
   }
 
   const calculateEverything = () => {
     if (isActive) {
       const { dotPercentage } = getBounds()
-      const newValue = dotPercentage * (max - min) + min
       setActiveValue((existingValue) => {
+        const newValue = dotPercentage * (max - min) + min
         if (newValue !== existingValue) {
           onChange(newValue, existingValue)
         }
@@ -127,15 +136,14 @@ const Range = ({ className, min, max, value: initialValue, step, onChange, dotCo
     })
   })
 
-  // this runs only once during init.
+  // this runs when we need to set things up based on new values
+  // that are given to this component
   useEffect(() => {
     initialize()
-  }, [])
+  }, [min, max, specifiedValue, step])
 
   // this runs each time there is an update
   useEffect(() => calculateEverything())
-
-  useEffect(() => calculateEverything(), [min, max, initialValue, step])
 
   return (
     <div
@@ -171,8 +179,9 @@ Range.propTypes = {
 Range.defaultProps = {
   value: 0,
   min: 0,
-  max: 10,
-  step: 1
+  max: 100,
+  step: 1,
+  dotColor: 'black'
 }
 
 export default Range
