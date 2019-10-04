@@ -39,7 +39,8 @@ const Checkbox = ({
     );
 };
 
-Checkbox.propTpes = {
+Checkbox.propTypes = {
+    title: PropTypes.string.isRequired,
     options: PropTypes.array.isRequired,
     onItemClick: PropTypes.func
 };
