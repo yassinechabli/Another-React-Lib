@@ -1,4 +1,6 @@
-# Another-React-Lib
+<img src ="docs/images/aReactLib.png" alt="logo" />
+
+## Another-React-Lib
 
 [![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
@@ -13,7 +15,7 @@ Just another React Library filled with awesome reusable components
 [npm]: https://www.npmjs.org/package/npm-package
 
 [coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+[coveralls]: https://coveralls.io/github/NehemiahK/Another-React-Lib
 
 ## Install ##
 Navigate into your React project and run the following command:  
@@ -40,7 +42,7 @@ export default App;
 
 ## Contributing 
 
-If you want to contrbiute to this project please take a look at the [guidelines/how-to](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md)
+If you want to contribute to this project please take a look at the [guidelines/how-to](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md)
 
 ## Documentation
 
@@ -59,6 +61,6 @@ Oh and I was able to get this project up and running by using `nwb`, which is an
 
 ## Hacktoberfest 2019
 
-If you want to contrbiute for Hacktoberfest 2019, be sure to check out how to contribute. If you want to be eligible for your free Hacktoberfest shirt and stickers then be sure to register. https://hacktoberfest.digitalocean.com/ 
+If you want to contribute for Hacktoberfest 2019, be sure to check out [how to contribute](https://github.com/NehemiahK/Another-React-Lib/blob/master/CONTRIBUTING.md). If you want to be eligible for your free Hacktoberfest shirt and stickers then be sure to register. https://hacktoberfest.digitalocean.com/ 
 
 Feel free to make all four of your pull requests here or feel free to spread them out across other respositories. 

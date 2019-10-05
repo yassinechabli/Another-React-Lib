@@ -1,11 +1,15 @@
-.green {background-color: #4CAF50;} /* Green */
-.blue {background-color: #008CBA;} /* Blue */
-.red {background-color: #f44336;} /* Red */ 
-.gray {background-color: #e7e7e7; color: black;} /* Gray */ 
-.black {background-color: #555555;} /* Black */
+.green-button {background-color: #4CAF50;} /* Green */
+.blue-button {background-color: #008CBA;} /* Blue */
+.red-button {background-color: #f44336;} /* Red */ 
+.gray-button {background-color: #e7e7e7; color: black;} /* Gray */ 
+.black-button {background-color: #555555;} /* Black */
 
-.small {font-size: 16px} 
-.medium {font-size: 22px}
-.large {font-size: 30px}
+.small-button {font-size: 16px} 
+.medium-button {font-size: 22px}
+.large-button {font-size: 30px}
 
-.button {border-radius: 5px; padding:10px}
+.sm-button {font-size: 16px} 
+.md-button {font-size: 22px}
+.lg-button {font-size: 30px}
+
+.button {border-radius: 5px; padding:10px; color:'white'}

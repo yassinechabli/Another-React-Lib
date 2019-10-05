@@ -1,0 +1,85 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+  color: white;
+  position: absolute;
+  right: 0;
+}
+
+.brand {
+  padding: 15px 16px;
+  color: #e8e8e8;
+}
+
+#mytopnav.dark {
+  background-color: #333;
+}
+
+#mytopnav.light {
+  background-color: #e8e8e8;
+}
+
+#mytopnav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#mytopnav a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#mytopnav a:hover:not(.active) {
+  background-color: #111;
+}
+
+#mytopnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dark .active {
+  background-color: #008cba;
+}
+.light .active {
+  background-color: #c1c1c1;
+}
+
+#mytopnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #mytopnav a:not(:first-child) {
+    display: none;
+  }
+  #mytopnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mytopnav.sandwich {
+    position: relative;
+    flex-direction: column;
+  }
+  #mytopnav.sandwich .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #mytopnav.sandwich a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

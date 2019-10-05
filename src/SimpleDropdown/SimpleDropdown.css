@@ -1,0 +1,19 @@
+.select {
+    border-radius: 5px; 
+    padding:10px; 
+    box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.4);
+    -moz-box-shadow: 0px -5px 38px #fff, 0px 0px 10px rgba(0,0,0,.4);
+    background: none;
+    border: none;
+    transition: all .4s;
+    min-width: 150px;
+    border-color: white; 
+    font-size: 16px;   
+}
+
+.option {
+    color: black;
+    background-color: #F5F2F2;
+    font-size: 16px;
+}
