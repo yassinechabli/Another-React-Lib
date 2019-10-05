@@ -8,7 +8,7 @@ const GhostButton = props => {
     <button
       style={styles}
       onClick={handleClick}
-      className={`${buttonColor} ${size} ghost-button`}
+      className={`ghost-button-${buttonColor} ghost-button-${size} ghost-button`}
     >
       {text}
     </button>

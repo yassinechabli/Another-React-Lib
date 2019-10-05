@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./button.css";
+import "./DeleteButton.css";
 
-const FlatButton = props => {
+const DeleteButton = props => {
   let { buttonColor, text, size, styles, handleClick } = props;
   return (
     <button
       style={styles}
       onClick={handleClick}
-      className={`flat-button-${buttonColor} flat-button-${size} flat-button`}
+      className={`${buttonColor} ${size} button delete-button`}
     >
       {text}
     </button>
   );
 };
 
-FlatButton.defaultProps = {
+DeleteButton.defaultProps = {
   buttonColor: "red",
   text: "e",
   size: "small",
@@ -23,7 +23,7 @@ FlatButton.defaultProps = {
   handleClick: () => {}
 };
 
-FlatButton.propTypes = {
+DeleteButton.propTypes = {
   buttonColor: PropTypes.string,
   text: PropTypes.string,
   size: PropTypes.oneOf(["small", "medium", "large"]),
@@ -31,4 +31,4 @@ FlatButton.propTypes = {
   handleClick: PropTypes.func
 };
 
-export default FlatButton;
+export default DeleteButton;

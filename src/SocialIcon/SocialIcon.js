@@ -11,7 +11,7 @@ import whatsapp from "./res/whatsapp.svg";
 import "./SocialIcon.css";
 
 const SocialIcon = props => {
-  const { name, size } = props;
+  const { name, size, link } = props;
 
   const social_icons = {
     facebook: fb,
@@ -25,12 +25,17 @@ const SocialIcon = props => {
 
   const icon = social_icons[name] || share;
 
-  return <img src={icon} className={`icon-${size || "md"}`} />;
+  return (
+    <a href={link}>
+      <img src={icon} className={`icon-${size || "md"}`} />
+    </a>
+  );
 };
 
 SocialIcon.propTypes = {
   name: PropTypes.string,
-  size: PropTypes.oneOf("sm", "md", "lg")
+  size: PropTypes.oneOf("sm", "md", "lg"),
+  link: PropTypes.string.isRequired
 };
 
 export default SocialIcon;

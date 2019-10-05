@@ -1,0 +1,10 @@
+.link {
+    display: inline-block;
+    background: transparent;
+    color: #000;
+    transition: .3s all linear;
+}
+
+.link:hover {
+    color: rgba(0,0,0,.6);
+}
