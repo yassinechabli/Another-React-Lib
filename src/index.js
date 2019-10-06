@@ -26,7 +26,7 @@ import Checkbox from "./Checkbox/Checkbox";
 import StickyButton from "./StickyButton/StickyButton";
 import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
-import DeleteButton from './DeleteButton/DeleteButton'
+import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
 export {
   LoadingButton,
@@ -52,6 +52,7 @@ export {
   SocialIcon,
   Notification,
   Profile,
+  ExtraOptions,
   Checkbox,
   ExtendedText,
   Searchbar,

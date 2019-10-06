@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import {
-  Button
-} from "../../src/index";
+import { Button } from "../../src/index";
 
+import ExtraOptions from "../../src/ExtraOptions/ExtraOptions";
 
 class Demo extends Component {
   render() {
@@ -15,6 +14,7 @@ class Demo extends Component {
            However, do not push any changes to this file.
          </h2>
 
+
         <h4>Example of a component</h4>
         <Button buttonColor="blue" />
 
@@ -24,4 +24,5 @@ class Demo extends Component {
   }
 }
 
-render(<Demo />, document.querySelector('#demo'))
+render(<Demo />, document.querySelector("#demo"));
+
