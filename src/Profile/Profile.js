@@ -1,14 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 import SocialIcon from "../SocialIcon/SocialIcon";
 //To do: create styling and different pre-set profile style types
-import "./styles.css";
+import "./Profile.css";
 
 function Profile(props) {
   const { name, image, bio, className, link, socials } = props;
 
   return (
     <section className={(className && className) || `${name}-profile`}>
-      {image && <img src={image.location}></img>}
+      {image && <img className="profile" src={image.location || image}></img>}
 
       <h2>{name}</h2>
 
@@ -34,5 +35,14 @@ function Profile(props) {
     </section>
   );
 }
+
+Profile.propTypes = {
+  name: PropTypes.string,
+  image: PropTypes.element || PropTypes.string,
+  bio: PropTypes.string,
+  className: PropTypes.string,
+  link: PropTypes.string,
+  socials: PropTypes.array
+};
 
 export default Profile;

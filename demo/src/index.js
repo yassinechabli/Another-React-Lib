@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 
-import { Button, Profile } from "../../src/index";
+import { Button } from "../../src/index";
 
 class Demo extends Component {
   render() {
@@ -14,15 +14,6 @@ class Demo extends Component {
 
         <h4>Example of a component</h4>
         <Button buttonColor="blue" />
-        <Profile
-          className="Twitter"
-          name="Test Name Here"
-          bio="The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog. The quick brown fox jumped over the lazy dog."
-          socials={[
-            { name: "twitter", link: "twiter.com", size: "sm" },
-            { name: "facebook", link: "facebook.com", size: "sm" }
-          ]}
-        />
       </div>
     );
   }

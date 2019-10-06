@@ -1,8 +1,0 @@
-.Facebook,
-.Twitter,
-.Tinder,
-.LinkedIn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
