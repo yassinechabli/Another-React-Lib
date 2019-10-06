@@ -1,7 +1,10 @@
-import LoadingButton from "./LoadingButton";
-import SimpleRedButton from "./SimpleRedButton/SimpleRedButton";
+
+import LoadingButton from './LoadingButton'
+import SimpleRedButton from './SimpleRedButton/SimpleRedButton'
+import Button from './Button/Button'
+import Navbar from './Navbar/Navbar'
+import NavItems from './Navbar/NavItems'
 import GhostButton from "./GhostButton/GhostButton";
-import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
 import Avatar from "./Avatar/Avatar";
@@ -18,11 +21,12 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
+import Spinner from "./Spinner/Spinner"
 import Checkbox from "./Checkbox/Checkbox";
 import StickyButton from "./StickyButton/StickyButton";
 import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
-import DeleteButton from './DeleteButton/DeleteButton'
+import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
 export {
   LoadingButton,
@@ -48,10 +52,12 @@ export {
   SocialIcon,
   Notification,
   Profile,
+  ExtraOptions,
   Checkbox,
   ExtendedText,
   Searchbar,
   Datepicker,
-  Reaction
+  Reaction,
+  Navbar,
+  NavItems
 };
-
