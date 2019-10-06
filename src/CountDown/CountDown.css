@@ -1,0 +1,9 @@
+.countdown-div.timer-done {
+    background-image: url("./confetti.gif");
+    background-size: 180px;
+    height: 150px;
+    width: 180px;
+}
+.countdown-div p {
+    padding: 70px;
+}
