@@ -3,30 +3,19 @@ import "./Favourite.css";
 import PropTypes from "prop-types";
 import Star from "./Star.js";
 
-class Favourite extends React.Component {
-  state = {
-    isToggled: false
-  };
+const Favourite = ({ dimensions }) => {
+  const [setToggle, isToggled] = React.useState(false);
 
-  handleToggle = () => {
-    this.setState({
-      isToggled: !this.state.isToggled
-    });
-  };
+  const handleToggle = () => setToggle(!isToggled);
 
-  render() {
-    const { isToggled } = this.state;
-    const { dimensions } = this.props;
-
-    return (
-      <Star
-        onClick={this.handleToggle}
-        fill={isToggled ? "#ffd055" : "#d8d8d8"}
-        dimensions={dimensions}
-      />
-    );
-  }
-}
+  return (
+    <Star
+      onClick={handleToggle}
+      fill={isToggled ? "#ffd055" : "#d8d8d8"}
+      dimensions={dimensions}
+    />
+  );
+};
 
 Favourite.propTypes = {
   dimensions: PropTypes.number.isRequired

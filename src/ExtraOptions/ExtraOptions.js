@@ -1,37 +1,37 @@
-import React from 'react';
-import './ExtraOptions.css';
+import React from "react";
+import PropTypes from "prop-types";
+import "./ExtraOptions.css";
 
-class ExtraOptions extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      hover: false
-    };
-  }
+const ExtraOptions = ({ options }) => {
+  const [setHover, hover] = React.useState(false);
 
-  toggleHover = () => {
-    this.setState({ hover: !this.state.hover });
-  };
+  const toggleHover = () => setHover(!hover);
 
-  render() {
-    const options = this.props.options.map(option => (
-      <li className='option'>{option}</li>
-    ));
+  return (
+    <div
+      className="section"
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
+      {hover && (
+        <ul className="optionsList">
+          {options.map((option, index) => (
+            <li key={`${option}-${index}`} className="option">
+              {option}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
 
-    return (
-      <div
-        className='section'
-        onMouseEnter={this.toggleHover}
-        onMouseLeave={this.toggleHover}
-      >
-        {this.state.hover && <ul className='optionsList'>{options}</ul>}
-      </div>
-    );
-  }
-}
+ExtraOptions.propTypes = {
+  options: PropTypes.array
+};
 
 ExtraOptions.defaultProps = {
-  options: ['Delete', 'Save']
+  options: ["Delete", "Save"]
 };
 
 export default ExtraOptions;
