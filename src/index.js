@@ -21,6 +21,8 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
+import List from "./List/List";
+
 import Spinner from "./Spinner/Spinner"
 import Checkbox from "./Checkbox/Checkbox";
 import StickyButton from "./StickyButton/StickyButton";
@@ -28,6 +30,7 @@ import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
 import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
+
 export {
   LoadingButton,
   SimpleRedButton,
@@ -52,6 +55,8 @@ export {
   SocialIcon,
   Notification,
   Profile,
+  SearchBar,
+  List,
   ExtraOptions,
   Checkbox,
   ExtendedText,

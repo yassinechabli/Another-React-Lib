@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.list > .listitem {
+    width: 100%;
+}
+
+.list > .listitem > .content {
+    border: none;
+}
