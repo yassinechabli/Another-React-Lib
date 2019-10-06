@@ -1,0 +1,13 @@
+.notification {
+  border: none;
+  border-radius: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.notification-red {
+  background: #c62828;
+}
+.notification-blue {
+  background: #1565c0;
+}

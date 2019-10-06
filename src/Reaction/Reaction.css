@@ -1,0 +1,13 @@
+.reaction {
+  border: none;
+  border-radius: 100%;
+  color: #3d5afe;
+  background: #ffffff;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.reaction:hover {
+  color: #ffffff;
+  background: #3d5afe;
+}
