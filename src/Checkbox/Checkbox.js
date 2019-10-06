@@ -20,7 +20,7 @@ const Checkbox = ({
                     return (
                         <div>
                             <label class="container"> {value.label}
-                                <input type="checkbox" id={value.id} name="checkbox" onClick={() => onItemClick(item.id)} className=".regular-checkbox" />
+                                <input type="checkbox" id={value.id} name="checkbox" onClick={() => onItemClick(value.id)} className=".regular-checkbox" />
                                 <span class="checkmark"></span>
                             </label>
 
