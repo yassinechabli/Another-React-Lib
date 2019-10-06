@@ -1,7 +1,10 @@
-import LoadingButton from "./LoadingButton";
-import SimpleRedButton from "./SimpleRedButton/SimpleRedButton";
+
+import LoadingButton from './LoadingButton'
+import SimpleRedButton from './SimpleRedButton/SimpleRedButton'
+import Button from './Button/Button'
+import Navbar from './Navbar/Navbar'
+import NavItems from './Navbar/NavItems'
 import GhostButton from "./GhostButton/GhostButton";
-import Button from "./Button/Button";
 import Header from "./Header/Header";
 import Form from "./Form/Form";
 import Avatar from "./Avatar/Avatar";
@@ -52,6 +55,7 @@ export {
   ExtendedText,
   Searchbar,
   Datepicker,
-  Reaction
+  Reaction,
+  Navbar,
+  NavItems
 };
-
