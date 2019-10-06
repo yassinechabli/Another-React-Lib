@@ -1,33 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./Spinner.css";
+import React from 'react';
+import PropTypes from 'prop-types'
+import "./Spinner.css"
 
-/**
- * Spinner
- * Renders a spinner
- * E.g.:
- * ```html
- * <Spinner size='sm' color='default' />
- * ```
- */
-const Spinner = props => {
-  let { size, color } = props;
-  return (
-    <div
-      className={`spinner spinner--${size} spinner--${color}`}
-    >
-    </div>
-  );
-};
+const Spinner = ({ size, color, speed, thick, background }) =>
+	<div className="spinnerWrapper">
+		<div className={`spinner`} style={{
+			width: `${size}px`, height: `${size}px`,
+			borderColor: background,
+			borderTopColor: color, animationDuration: `${speed}s`,
+			borderWidth: `${thick}px`, borderTopWidth: `${thick}px`
+		}} />
+	</div>
 
 Spinner.defaultProps = {
-  size: "sm",
-  color: "default"
-};
+	size: 20,
+	color: '#6495ed',
+	background: 'rgba(0,0,0,0.2)',
+	speed: 2,
+	thick: 5
+}
 
 Spinner.propTypes = {
-  size: PropTypes.oneOf("sm", "md", "lg"),
-  color: PropTypes.oneOf("default", "accent")
-};
+	size: PropTypes.number,
+	color: PropTypes.string,
+	background: PropTypes.string,
+	speed: PropTypes.number,
+	speed: PropTypes.number
+}
 
 export default Spinner;
