@@ -38,10 +38,10 @@
     font-size: 12px;
     font-weight: bold;
 
-    -webkit-transition:  all 0.4s;
-    -moz-transition:  all 0.4s;
-    -o-transition:  all 0.4s;
-    transition:  all 0.4s;
+    -webkit-transition:  all 0.2s;
+    -moz-transition:  all 0.2s;
+    -o-transition:  all 0.2s;
+    transition:  all 0.2s;
 }
 
 .searchbar button:hover {
