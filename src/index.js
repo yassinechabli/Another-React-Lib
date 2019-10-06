@@ -21,6 +21,7 @@ import TwitterShare from "./TwitterShareButton/twitterShare";
 import Switch from "./Switch/Switch";
 import Notification from "./Notification/Notification";
 import ExtendedText from "./ExtendedText/ExtendedText";
+import Spinner from "./Spinner/Spinner"
 import Checkbox from "./Checkbox/Checkbox";
 import StickyButton from "./StickyButton/StickyButton";
 import Searchbar from "./SearchBar/Searchbar";
