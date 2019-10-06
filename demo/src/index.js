@@ -15,7 +15,8 @@ import {
   Header,
   ExtendedText,
   SearchBar,
-  Switch
+  Switch,
+  List
 } from "../../src/index";
 
 
@@ -135,6 +136,12 @@ class Demo extends Component {
 
         <h2>Form Component</h2>
         <Form fields={["input", "textarea", "button"]} />
+
+        <h2>List Component</h2>
+        <List listItems={[{content: "Item1", height: 50, background: '#345995'}, 
+              {content: "Item2", height: 50, background: '#03CEA4'}, 
+              {content: "Item3", height: 50, background: '#FB4D3D'}]} >
+        </List>
       </div>
     );
   }

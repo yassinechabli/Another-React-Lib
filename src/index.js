@@ -17,6 +17,7 @@ import Collapse from "./Collapse/Collapse";
 import Profile from "./Profile/Profile";
 import SearchBar from "./SearchBar/Searchbar";
 import ExtendedText from "./ExtendedText/ExtendedText";
+import List from "./List/List";
 
 export {
   LoadingButton,
@@ -37,5 +38,6 @@ export {
   TwitterShare,
   Collapse,
   Profile,
-  SearchBar
+  SearchBar,
+  List
 };
