@@ -1,0 +1,32 @@
+.datepicker {
+    margin-left: 10px;
+    border: 2px solid #0A5373;
+    color: #09213E;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.datepicker:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f073";
+    color: #0A5373;
+    padding: 0 5px;
+    font-size: 15px;
+}
+
+.datepicker::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 8px;
+    width: 8px;
+    height: 10px;
+    color: transparent;
+    background: transparent;
+}
+
+.datepicker::-webkit-inner-spin-button {
+    display: none;
+}

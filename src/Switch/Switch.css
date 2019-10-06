@@ -16,7 +16,11 @@
 
   border-radius: 10px;
   margin: 0 10px;
-  background: #000;
+  background: #555;
+}
+
+.switch input:checked + span.slider {
+  background: #51e83a;
 }
 
 .switch span.slider::before {
