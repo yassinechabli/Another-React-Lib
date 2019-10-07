@@ -45,7 +45,7 @@ export default function Login(props) {
           props.emailHasError || props.passwordHasError || props.submitDisabled
         }
         text="Sign In"
-        styles={{ color: "#fefefe", width: "100%" }}
+        styles={{ color: "#fefefe", width: "100%", marginTop: "1.2rem" }}
       />
     </form>
   );

@@ -1,5 +1,7 @@
 .Login--form {
   align-items: center;
+  border-radius: .3em;
+  box-shadow: 0 1px 3px hsla(0, 30%, 10%, 80%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,13 +23,15 @@
 .Login--label {
   align-self: flex-start;
   text-align: left;
+  margin-top: 0.3rem;
 }
 
 .Login--input {
   border: 1px solid #a4a4a4;
   border-bottom: 2px solid #4a4a4a;
+  border-radius: 0.3rem;
   padding: 0.5rem 0.8rem;
   margin: 0.2rem;
   text-align: left;
-  width: 100%;
+  width: 96.5%;
 }
