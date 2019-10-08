@@ -2,39 +2,26 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./collapse.css";
 
-class Collapse extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      open: false
-    };
-    this.togglePanel = this.togglePanel.bind(this);
-  }
+const Collapse = () => {
+  const [open, setOpen] = React.useState(false);
 
-  togglePanel() {
-    this.setState({ open: !this.state.open });
-  }
+  const togglePanel = () => setOpen(!open);
 
-  render() {
-    const { headerStyle, bodyStyle, collapseHeader, collapseBody } = this.props;
-    return (
-      <div>
-        <div
-          style={headerStyle}
-          className="header"
-          onClick={e => this.togglePanel(e)}
-        >
-          {collapseHeader}
-        </div>
-        {this.state.open ? (
-          <div className="content" style={bodyStyle}>
-            {collapseBody}
-          </div>
-        ) : null}
+  const { headerStyle, bodyStyle, collapseHeader, collapseBody } = this.props;
+
+  return (
+    <div>
+      <div style={headerStyle} className="header" onClick={togglePanel}>
+        {collapseHeader}
       </div>
-    );
-  }
-}
+      {this.state.open && (
+        <div className="content" style={bodyStyle}>
+          {collapseBody}
+        </div>
+      )}
+    </div>
+  );
+};
 
 Collapse.defaultProps = {
   headerStyle: {
