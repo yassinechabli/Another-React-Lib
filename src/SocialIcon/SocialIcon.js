@@ -34,7 +34,7 @@ const SocialIcon = props => {
 
 SocialIcon.propTypes = {
   name: PropTypes.string,
-  size: PropTypes.oneOf("sm", "md", "lg"),
+  size: PropTypes.oneOf(["sm", "md", "lg"]),
   link: PropTypes.string.isRequired
 };
 

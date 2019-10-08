@@ -1,0 +1,35 @@
+.Facebook,
+.Twitter,
+.Tinder,
+.LinkedIn {
+  display: flex;
+  flex-direction: column;
+  padding: 4em 0;
+}
+
+.Facebook h2,
+.Twitter h2,
+.Tinder h2,
+.LinkedIn h2 {
+  font-weight: 700;
+  font-size: 1.28em;
+}
+
+.Facebook p,
+.Twitter p,
+.Tinder p,
+.LinkedIn p {
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.Facebook .profile,
+.Twitter .profile,
+.Tinder .profile,
+.LinkedIn .profile {
+  width: 100%;
+  max-width: 250px;
+}
+
+.Tinder .profile {
+  border-radius: 100%;
+}

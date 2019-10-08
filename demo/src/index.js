@@ -11,18 +11,17 @@ class Demo extends Component {
       <div>
         <h2>
           Please feel free to use this file to experiment with components.
-           However, do not push any changes to this file.
-         </h2>
-
+          However, do not push any changes to this file.
+        </h2>
 
         <h4>Example of a component</h4>
         <Button buttonColor="blue" />
 
-
+        <h4>Example of a component</h4>
+        <Button buttonColor="blue" />
       </div>
     );
   }
 }
 
 render(<Demo />, document.querySelector("#demo"));
-
