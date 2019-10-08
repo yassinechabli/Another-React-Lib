@@ -3,25 +3,7 @@ import { render } from "react-dom";
 import "./index.css";
 import {
   Button,
-  Collapse,
-  FlatButton,
-  Form,
-  Profile,
-  Tabs,
-  Tab,
-  Radio,
-  RadioGroup,
-  TwitterShare,
-  Header,
-  ExtendedText,
-  SearchBar,
-  Switch,
-  List
 } from "../../src/index";
-
-import { Button } from "../../src/index";
-
-import ExtraOptions from "../../src/ExtraOptions/ExtraOptions";
 
 class Demo extends Component {
   render() {
