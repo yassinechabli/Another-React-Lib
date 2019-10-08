@@ -1,5 +1,23 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import "./index.css";
+import {
+  Button,
+  Collapse,
+  FlatButton,
+  Form,
+  Profile,
+  Tabs,
+  Tab,
+  Radio,
+  RadioGroup,
+  TwitterShare,
+  Header,
+  ExtendedText,
+  SearchBar,
+  Switch,
+  List
+} from "../../src/index";
 
 import { Button } from "../../src/index";
 
@@ -13,9 +31,6 @@ class Demo extends Component {
           Please feel free to use this file to experiment with components.
           However, do not push any changes to this file.
         </h2>
-
-        <h4>Example of a component</h4>
-        <Button buttonColor="blue" />
 
         <h4>Example of a component</h4>
         <Button buttonColor="blue" />
