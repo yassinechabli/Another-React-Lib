@@ -30,6 +30,8 @@ import Searchbar from "./SearchBar/Searchbar";
 import Datepicker from "./Datepicker/Datepicker";
 import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
+import AlertWrapper from "./AlertWrapper/AlertWrapper";
+import Card from "./Card/Card";
 
 export {
   LoadingButton,
@@ -64,5 +66,7 @@ export {
   Datepicker,
   Reaction,
   Navbar,
-  NavItems
+  NavItems,
+  AlertWrapper,
+  Card
 };
