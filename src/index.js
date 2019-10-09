@@ -32,7 +32,7 @@ import DeleteButton from "./DeleteButton/DeleteButton";
 import Reaction from "./Reaction/Reaction";
 import AlertWrapper from "./AlertWrapper/AlertWrapper";
 import Card from "./Card/Card";
-
+import DonateButton from "./DonateButton/DonateButton";
 export {
   LoadingButton,
   SimpleRedButton,
@@ -68,5 +68,6 @@ export {
   Navbar,
   NavItems,
   AlertWrapper,
-  Card
+  Card,
+  DonateButton
 };

@@ -1,0 +1,25 @@
+a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+.donate {
+    background: #3873a6;
+    border-radius: 4px;
+    color: #fff;
+    padding: 17px 49px 15px 15px;
+}
+.donate:after {
+    color: #ffffff;
+    content: "\f004";
+    font: 20px "FontAwesome";
+    padding: 10px 0;
+    padding-left: 10px;
+    position: absolute;
+    right: 16px;
+    top: 7px;
+}
+
+.donate:hover{
+    color: white;
+}
